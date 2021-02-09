@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blanchard</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="headerbanner.css">
+    <link rel="stylesheet" href="bannermenu.css">
+    <script src="burgermenu.js"></script>
+    <script src="accordion.js"></script>
+    <script src="headersearch.js"></script>
+
+</head>
+<body>
+<div class="site__container">
+    <header class="header">
+        <div class="header__container">
+            <div aria-label="Меню"  id="burger" class="burger">
+                <span></span>
+            </div>
+            <div class="header__date1024">28 марта, 14:15</div>
+            <a href="#"  class="header__logo">
+                <img src="img/logo320.svg" alt="logo" class="header__logo320">
+                <img src="img/logo768.svg" alt="logo" class="header__logo768">
+                <img src="img/logo1920.svg" alt="logo" class="header__logo1920">
+            </a>
+            <div id="menu" class="menu">
+                <div class="menu__content">
+
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Галерея</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">События</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Издания</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Проекты</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                    </ul>
+                    <button type="submit" class="menu__button--enter" aria-label="Войти"></button>
+                </div>
+
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Галерея</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">События</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Издания</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header__enter"></a>
+            <button aria-label="Поиск"  type="submit" class="header__search"></button>
+            <div id="header__search1024">
+                <button aria-label="Поиск"  type="submit" id="search__icon"></button>
+                <form>
+                    <input type="text" id="search__input" name="search" autocomplete="off">
+                </form>
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner__container">
+                <div class="banner__menu">
+                    <div class="banner__accordion--container">
+                        <div class="accordion">
+                            <ul class="banner__accordion--list">
+                                <li class="banner__accordion--item">
+                                    <div class="banner__accordion--title">
+                                        <a href="#" class="banner__accordion--link">Реализм</a>
+                                        <span class="banner__accordion--icon"></span>
+                                    </div>
+                                    <div class="banner__accordion--content">
+
+                                        <div class="banner__menu--scroll" data-simplebar>
+                                            <div class="realism-1 accordion__content--item">Тинторетто</div>
+                                            <div class="realism-2 accordion__content--item">Фридрих</div>
+                                            <div class="realism-3 accordion__content--item">Леонардо</div>
+                                            <div class="realism-4 accordion__content--item">Верроккьо</div>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+                                <li class="banner__accordion--item">
+                                    <div class="banner__accordion--title">
+                                        <a href="#" class="banner__accordion--link">Импрессионизм</a>
+                                        <span class="banner__accordion--icon"></span>
+                                    </div>
+                                    <div class="banner__accordion--content">
+                                        <div class="impress-1 accordion__content--item">Моне</div>
+                                        <div class="impress-2 accordion__content--item">Сислей</div>
+                                        <div class="impress-3 accordion__content--item">Мане</div>
+                                        <div class="impress-4 accordion__content--item">Ренуар</div>
+                                    </div>
+                                </li>
+                                <li class="banner__accordion--item">
+                                    <div class="banner__accordion--title">
+                                        <a href="#" class="banner__accordion--link">Постимпрессионизм</a>
+                                        <span class="banner__accordion--icon"></span>
+                                    </div>
+                                    <div class="banner__accordion--content">
+                                        <div class="postimpress-1 accordion__content--item">Ван Гог</div>
+                                        <div class="postimpress-2 accordion__content--item">Сезанн</div>
+                                        <div class="postimpress-3 accordion__content--item">Гоген</div>
+                                        <div class="postimpress-4 accordion__content--item">Сёра</div>
+                                    </div>
+                                </li>
+                                <li class="banner__accordion--item">
+                                    <div class="banner__accordion--title">
+                                        <a href="#" class="banner__accordion--link">Авангард</a>
+                                        <span class="banner__accordion--icon"></span>
+                                    </div>
+                                    <div class="banner__accordion--content">
+                                        <div class="avangard-1 accordion__content--item">Кандинский</div>
+                                        <div class="avangard-2 accordion__content--item">Маринетти</div>
+                                        <div class="avangard-3 accordion__content--item">Малевич</div>
+                                        <div class="avangard-4 accordion__content--item">Пикассо</div>
+                                    </div>
+                                </li>
+                                <li class="banner__accordion--item">
+                                    <div class="banner__accordion--title">
+                                        <a href="#" class="banner__accordion--link">Футуризм</a>
+                                        <span class="banner__accordion--icon"></span>
+                                    </div>
+                                    <div class="banner__accordion--content">
+                                        <div class="futurism-1 accordion__content--item">Карра</div>
+                                        <div class="futurism-2 accordion__content--item">Прателла</div>
+                                        <div class="futurism-3 accordion__content--item">Северини</div>
+                                        <div class="futurism-4 accordion__content--item">Балла</div>
+                                    </div>
+                                </li>
+                                <li class="banner__search1920">
+                                    <form action="" class="banner__search--form">
+                                        <button aria-label="Поиск"  type="submit" class="banner__search--icon "></button>
+                                        <input type="text" placeholder="Поиск по сайту" name="search" class="banner__search--input">
+
+                                    </form>
+                                </li>
+                            </ul>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <defs>
+                                    <filter id="blur" x="0" y="0">
+                                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner__content">
+                    <h1 class="banner__title">
+                        Прикоснитесь <br> к прекрасному
+                    </h1>
+                    <p class="banner__text">
+                        Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+                    </p>
+                    <button type="submit" class="banner__button" aria-label="Подписаться на рассылку">Подписаться на рассылку</button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="about container">
+
+            <h2>О нас</h2>
+            <p class="about__text">
+                Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+            </p>
+
+        </section>
+        <section class="gallery">
+
+        </section>
+        <section class="cataloge">
+
+        </section>
+        <section class="events">
+
+        </section>
+        <section class="editions">
+
+        </section>
+        <section class="projects">
+
+        </section>
+        <section class="contacts">
+
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</div>
+</body>
