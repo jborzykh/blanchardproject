@@ -592,23 +592,6 @@ color: #ffffff;
     border: none;
 }
 
-.about{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin-bottom:80px;
-}
-
-.about__text{
-    min-width: 1082px;
-    width:1082px;
-    min-height: 214px;
-    padding-left: -3px;
-}
 
 
 
@@ -1067,12 +1050,7 @@ color: #ffffff;
     margin-left: 5px;
 }
 
-.about__text{
-    min-width: 925px;
-    width: 925px;
-    min-height: 246px;
-    padding-left: -1px;
-}
+
     
 
 
@@ -1119,13 +1097,7 @@ color: #ffffff;
     }
     
     
-    .about__text{
-        min-width: 666px;
-        width: 666px;
-        min-height: 342px;
-        padding-left: 2px;
-    }
-       
+   
  
     
 }
