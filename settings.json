@@ -1,0 +1,9 @@
+{
+    "editor.accessibilitySupport": "on",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.trimAutoWhitespace": true,
+    "editor.wordWrap": "on",
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+}

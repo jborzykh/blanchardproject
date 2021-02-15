@@ -1,0 +1,13 @@
+@media (min-width: 1920px) {
+    .burger,
+    #header__search,
+    .menu {
+        display: none;
+    }
+}
+
+@media(max-width: 1919px) {
+    .header__bottom {
+        display: none;
+    }
+}
