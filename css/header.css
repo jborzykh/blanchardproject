@@ -177,6 +177,29 @@
                     transition: all .6s ease-in-out;
                 }
                 
+                .bottom__menu--scroll {
+                    width: 260px;
+                    height: 200px;
+                }
+                
+                [simplebar-scrollbar] {
+                    height: 28px;
+                    width: 2px;
+                    border-radius: 0;
+                    background: #FFFFFF;
+                }
+                
+                .simplebar-scrollbar:before {
+                    height: 100%;
+                    opacity: 5;
+                    background: #FFFFFF;
+                }
+                
+                .simplebar-scrollbar.simplebar-visible:before {
+                    opacity: 1;
+                    transition: opacity 0s linear;
+                }
+                
                 .active .bottom__menu--content {
                     max-height: 300px;
                     height: 300px;
