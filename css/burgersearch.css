@@ -226,7 +226,7 @@
     }
     #header__search.active {
         height: 36px;
-        transform: translateX(-115px);
+        transform: translateX(-230px);
     }
     #search__input.active {
         margin-left: 10.55px;
@@ -263,12 +263,12 @@
     }
     #header__search.active {
         height: 36px;
-        transform: translateX(-320px);
+        transform: translateX(-638px);
     }
     #search__input.active {
         display: flex;
         margin-left: 10.55px;
-        min-width: 576px;
+        width: 576px;
         border-bottom: 1px solid #ffffff;
         visibility: visible;
     }
@@ -301,7 +301,8 @@
     #header__search.active {
         margin-top: 38px;
         height: 16px;
-        transform: translateX(-118px);
+        transform: translateX(-235px);
+        opacity: 1;
     }
     #search__icon {
         margin-right: 3px;
