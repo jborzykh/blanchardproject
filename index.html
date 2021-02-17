@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/commonstyles.css">
     <link rel="stylesheet" href="css/displaynone.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/burgerandmenu.css">
+    <link rel="stylesheet" href="css/burgersearch.css">
+    <link rel="stylesheet" href="css/banner.css">
     <script src="js/burgermenu.js"></script>
     <script src="js/headerbottommenu.js"></script>
     <script src="js/headersearch.js"></script>
@@ -46,10 +47,11 @@
                                 <a href="#" class="nav__link nav__link--small">Войти</a>
                             </li>
                         </ul>
+
                     </nav>
-                    <menu aria-label="Меню" id="burger" class="burger">
+                    <button aria-label="Меню" id="burger" class="burger">
                         <span></span>
-                    </menu>
+                    </button>
                     <div id="header__search">
                         <button aria-label="Поиск" type="submit" id="search__icon"></button>
                         <form>
@@ -76,11 +78,10 @@
                                                 <div class="realism-2 bottom__content--item">Фридрих</div>
                                                 <div class="realism-3 bottom__content--item">Леонардо</div>
                                                 <div class="realism-4 bottom__content--item">Верроккьо</div>
-                                                <div class="scroll__hidden bottom__content--item">Верроккьо</div>
+                                                <div class="bottom__content--item"></div>
                                             </div>
 
                                         </div>
-                                        <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
                                     </li>
                                     <li class="bottom__menu--item">
                                         <div class="bottom__menu--title">
@@ -94,11 +95,12 @@
                                                 <div class="impress-2 bottom__content--item">Сислей</div>
                                                 <div class="impress-3 bottom__content--item">Мане</div>
                                                 <div class="impress-4 bottom__content--item">Ренуар</div>
-                                                <div class="scroll__hidden bottom__content--item">Ренуар</div>
+                                                <div class="bottom__content--item"></div>
                                             </div>
 
 
                                         </div>
+
                                     </li>
                                     <li class="bottom__menu--item">
                                         <div class="bottom__menu--title">
@@ -112,7 +114,7 @@
                                                 <div class="postimpress-2 bottom__content--item">Сезанн</div>
                                                 <div class="postimpress-3 bottom__content--item">Гоген</div>
                                                 <div class="postimpress-4 bottom__content--item">Сёра</div>
-                                                <div class="scroll__hidden bottom__content--item">Сёра</div>
+                                                <div class="bottom__content--item"></div>
                                             </div>
 
 
@@ -130,7 +132,7 @@
                                                 <div class="avangard-2 bottom__content--item">Маринетти</div>
                                                 <div class="avangard-3 bottom__content--item">Малевич</div>
                                                 <div class="avangard-4 bottom__content--item">Пикассо</div>
-                                                <div class="scroll__hidden bottom__content--item">Пикассо</div>
+                                                <div class="bottom__content--item"></div>
                                             </div>
 
 
@@ -147,7 +149,7 @@
                                                 <div class="futurism-2 bottom__content--item">Прателла</div>
                                                 <div class="futurism-3 bottom__content--item">Северини</div>
                                                 <div class="futurism-4 bottom__content--item">Балла</div>
-                                                <div class="scroll__hidden bottom__content--item">Балла</div>
+                                                <div class="scroll__hidden bottom__content--item"></div>
 
                                             </div>
                                         </div>
@@ -159,7 +161,7 @@
 
                                         </form>
                                     </li>
-
+                                    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
                                 </ul>
 
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -180,35 +182,20 @@
             </div>
 
 
-
-
-
-
-
-    </div>
-
-    </header>
-    <main>
+        </header>
         <section class="banner">
             <div class="banner__container">
-                <div class="banner__menu">
-
-                    <div class="banner__content">
-                        <h1 class="banner__title">
-                            Прикоснитесь <br> к прекрасному
-                        </h1>
-                        <p class="banner__text">
-                            Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
-                        </p>
-                        <button type="submit" class="banner__button" aria-label="Подписаться на рассылку">Подписаться на
-                            рассылку</button>
-                    </div>
-
+                <div class="banner__content">
+                    <h1 class="banner__title">
+                        Прикоснитесь <br> к прекрасному
+                    </h1>
+                    <p class="banner__text">
+                        Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+                    </p>
+                    <button type="submit" class="banner__button" aria-label="Подписаться на рассылку">Подписаться на рассылку</button>
                 </div>
+            </div>
         </section>
-
-
-
         <section class="about container">
 
             <h2>О нас</h2>
@@ -220,70 +207,8 @@
             </div>
 
         </section>
-        <section class="gallery">
-            <div class="gallery__content">
-                <div class="gallery__left">
-                    <h2 class="gallery__heading">Галерея</h2>
-                    <span>Фильтровать по:</span>
-                    <div class="gallery__select">
-
-                    </div>
-                    <div class="gallery__text">
-                        Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="">авторизуйтесь</a>, либо воспользуйтесь лицензией.
-                    </div>
-
-                </div>
-                <div class="gallery__right">
-                    <div class="gallery__swiper--count"></div>
-                    <ul class="gallery__swiper gallery__list">
-
-                        <li class="gallery__item">
-
-                        </li>
-                        <li class="gallery__item">
-
-                        </li>
-                        <li class="gallery__item">
-
-                        </li>
-                        <li class="gallery__item">
-
-                        </li>
-                        <li class="gallery__item">
-
-                        </li>
-                        <li class="gallery__item">
-
-                        </li>
-                    </ul>
-
-                    <div class="gallery__text768">
-                        Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="">авторизуйтесь</a>, либо воспользуйтесь лицензией.
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-        <section class="cataloge">
-
-        </section>
-        <section class="events">
-
-        </section>
-        <section class="editions">
-
-        </section>
-        <section class="projects">
-
-        </section>
-        <section class="contacts">
-
-        </section>
-
-    </main>
-    <footer>
-
-    </footer>
     </div>
+
 </body>
+
+</html>
