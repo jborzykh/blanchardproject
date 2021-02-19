@@ -15,9 +15,6 @@
                 .header__top {
                     background: #000000;
                     height: 100px;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
                 }
                 
                 .header__logo {
@@ -29,6 +26,7 @@
                 }
                 
                 .header__nav {
+                    margin-left: -1px;
                     height: 100%;
                     min-width: 970px;
                     display: -webkit-box;
@@ -72,7 +70,7 @@
                 }
                 
                 .nav__item:first-child {
-                    width: 50px;
+                    width: 51px;
                 }
                 
                 .nav__item:nth-child(2) {
@@ -171,12 +169,13 @@
                 }
                 
                 .bottom__menu--icon {
+                    margin-top: 1.2px;
+                    margin-right: 1px;
                     background-image: url("../img/icons/banneritemarrow.svg");
-                    padding-left: 4px;
                     width: 10px;
                     height: 10px;
                     background-repeat: no-repeat;
-                    background-position: right;
+                    background-position: right center;
                     transform: rotate(0deg);
                     transition: all .4s ease-in-out;
                 }
@@ -187,20 +186,22 @@
                     transition: all .6s ease-in-out;
                 }
                 
-                [data-simplebar] {
+                .bottom__menu--scroll {
                     margin: 0;
                     width: 240px;
                     height: 220px;
                 }
                 
+                .simplebar-content-wrapper {
+                    overflow: auto;
+                }
+                
                 .simplebar-scrollbar {
                     background: #ffffff;
-                    height: 28px;
                     width: 2px;
                 }
                 
                 .simplebar-scrollbar:before {
-                    height: 28px;
                     width: 2px;
                     background: #ffffff;
                     opacity: 5;
@@ -211,10 +212,6 @@
                     right: 0;
                 }
                 
-                .simplebar-scrollbar.simplebar-visible:before {
-                    height: 28px;
-                }
-                
                 div.simplebar-track.simplebar-vertical {
                     top: 0;
                     width: 2px;
@@ -223,6 +220,7 @@
                 
                 div.simplebar-scrollbar.simplebar-vertical {
                     background: #ffffff;
+                    height: 100px;
                 }
                 
                 .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
@@ -256,7 +254,7 @@
                 }
                 
                 .bottom__menu--item:nth-child(5) {
-                    margin-right: 317.1px;
+                    margin-right: 313px;
                 }
                 
                 .bottom__menu--item:nth-child(1) {
@@ -282,6 +280,7 @@
                     height: 40px;
                     padding-top: 9px;
                     padding-left: 14px;
+                    font-family: 'OpenSans-SemiBold';
                     font-weight: 600;
                     font-size: 14px;
                     line-height: 19.07px;
@@ -372,10 +371,9 @@
                 }
                 
                 .bottom__menu--search1920 {
-                    margin-top: 14px;
-                    margin-bottom: 19px;
                     width: 251px;
                     height: 26px;
+                    position: relative;
                 }
                 
                 .bottom__menu--form {
@@ -384,10 +382,10 @@
                 }
                 
                 .form__search--icon {
+                    position: absolute;
+                    top: 25px;
                     width: 22.1px;
                     height: 27.62px;
-                    padding-top: 6px;
-                    margin-right: 6px;
                     outline: none;
                     border: none;
                     background: transparent;
@@ -399,9 +397,11 @@
                 }
                 
                 .form__search--input {
-                    padding-bottom: 6px;
+                    position: absolute;
+                    top: 22px;
+                    left: 33px;
                     width: 218px;
-                    height: 20px;
+                    height: 26px;
                     font-size: 18px;
                     font-weight: 400;
                     line-height: 25px;
@@ -413,6 +413,7 @@
                 }
                 
                 .form__search--input::placeholder {
+                    padding-bottom: 6px;
                     width: 100%;
                 }
                 
