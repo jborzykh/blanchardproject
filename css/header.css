@@ -65,8 +65,8 @@
                     margin-right: 62px;
                 }
                 
-                .nav__item:last-child {
-                    margin-left: 279px;
+                .nav__item:nth-child(7) {
+                    margin-right: 279px;
                 }
                 
                 .nav__item:first-child {
@@ -442,6 +442,7 @@
                         margin-top: 29px;
                         margin-right: 0;
                         width: 187.6px;
+                        margin-left: -2.5px;
                     }
                 }
                 
@@ -455,6 +456,7 @@
                     .header__logo {
                         margin-top: 12px;
                         margin-right: 0;
+                        margin-left: -1px;
                         width: 96.8px;
                     }
                 }
