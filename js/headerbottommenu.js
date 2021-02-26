@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
-    let accordion = document.querySelector('.bottom__menu--action');
-    let items = accordion.querySelectorAll('.bottom__menu--item');
-    let title = accordion.querySelectorAll('.bottom__menu--title');
+    let accordion = document.querySelector('.bottom__action');
+    let items = accordion.querySelectorAll('.bottom__item');
+    let title = accordion.querySelectorAll('.bottom__button');
 
     function toggleAccordion() {
         let thisItem = this.parentNode;

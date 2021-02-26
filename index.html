@@ -8,10 +8,10 @@
     <title>blanchard</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/commonstyles.css">
-    <link rel="stylesheet" href="css/displaynone.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/burgersearch.css">
     <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/displaynone.css">
     <script src="js/burgermenu.js"></script>
     <script src="js/headerbottommenu.js"></script>
     <script src="js/headersearch.js"></script>
@@ -24,6 +24,7 @@
 <body>
 
     <header class="header">
+
         <div class="header__top">
             <div class="header__container">
                 <a href="#" class="header__logo" id="header__logo">
@@ -33,25 +34,26 @@
                         <img src="img/logo1920.svg" alt="Logo">
                     </picture>
                 </a>
-                <nav class="header__nav" id="menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Галерея</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">События</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Издания</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-                        <li class="nav__item header__enter">
-                            <span class="header__enter--icon"></span>
-                            <a href="#" class="nav__link nav__link--small">Войти</a>
-                        </li>
+                <nav class="top__nav" id="menu">
+                    <ul class=" top__list ">
+                        <li class="top__item "><a href="# " class="top__link ">О нас</a></li>
+                        <li class="top__item "><a href="# " class="top__link ">Галерея</a></li>
+                        <li class="top__item "><a href="# " class="top__link ">Каталог</a></li>
+                        <li class="top__item "><a href="# " class="top__link ">События</a></li>
+                        <li class="top__item "><a href="# " class="top__link ">Издания</a></li>
+                        <li class="top__item "><a href="# " class="top__link ">Проекты</a></li>
+                        <li class="top__item "><a href="# " class="top__link ">Контакты</a></li>
                     </ul>
+                    <div class="enter">
+                        <span class="enter__icon "></span>
+                        <a href="# " class="top__link top__link_small ">Войти</a>
+                    </div>
+
 
                 </nav>
-                <button aria-label="Меню" id="burger" class="burger">
-                        <span></span>
-                    </button>
+                <button aria-label="Меню" id="burger">
+                    <span></span>
+                </button>
                 <div id="header__search">
                     <button aria-label="Поиск" type="submit" id="search__icon"></button>
                     <form>
@@ -61,130 +63,91 @@
                 </div>
             </div>
         </div>
-        <div class="header__bottom">
-            <div class="header__container">
-                <div class="header__bottom--menu">
-                    <div class="bottom__menu--container">
-                        <div class="bottom__menu--action">
-                            <ul class="bottom__menu--list">
-                                <li class="bottom__menu--item">
-                                    <div class="bottom__menu--title">
-                                        <a href="#" class="bottom__menu--link">Реализм</a>
-                                        <span class="bottom__menu--icon"></span>
-                                    </div>
-                                    <div class="bottom__menu--content">
-                                        <div class="bottom__menu--scroll" data-simplebar data-simplebar-scrollbar-max-size="28">
-                                            <div class=" realism-1 bottom__content--item ">Тинторетто</div>
-                                            <div class="realism-2 bottom__content--item ">Фридрих</div>
-                                            <div class="realism-3 bottom__content--item ">Леонардо</div>
-                                            <div class="realism-4 bottom__content--item ">Верроккьо</div>
-                                            <div class="realism-4 bottom__content--item ">Верроккьо</div>
+        <div class="header__bottom ">
+            <div class="header__container ">
 
-                                        </div>
+                <div class="bottom__action ">
+                    <ul class="bottom__list ">
+                        <li class="bottom__item ">
+                            <button class="bottom__button ">Реализм</button>
+                            <div class=" bottom__content ">
+                                <div class="bottom__scroll " data-simplebar data-simplebar-scrollbar-max-size="28 ">
+                                    <div class=" realism-1 bottom__content--item ">Тинторетто</div>
+                                    <div class="realism-2 bottom__content--item ">Фридрих</div>
+                                    <div class="realism-3 bottom__content--item ">Леонардо</div>
+                                    <div class="realism-4 bottom__content--item ">Верроккьо</div>
+                                    <div class="realism-4 bottom__content--item ">Верроккьо</div>
 
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bottom__item ">
+                            <button class=" bottom__button">Импрессионизм</button>
+                            <div class=" bottom__content ">
+                                <div class="bottom__scroll " data-simplebar data-simplebar-scrollbar-max-size="28 ">
+                                    <div class="impress-1 bottom__content--item ">Моне</div>
+                                    <div class="impress-2 bottom__content--item ">Сислей</div>
+                                    <div class="impress-3 bottom__content--item ">Мане</div>
+                                    <div class="impress-4 bottom__content--item ">Ренуар</div>
+                                    <div class="impress-4 bottom__content--item ">Ренуар</div>
 
-                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bottom__item ">
+                            <button class=" bottom__button">Постимпрессионизм</button>
+                            <div class=" bottom__content ">
+                                <div class="bottom__scroll " data-simplebar data-simplebar-scrollbar-max-size="28 ">
+                                    <div class="postimpress-1 bottom__content--item ">Ван Гог</div>
+                                    <div class="postimpress-2 bottom__content--item ">Сезанн</div>
+                                    <div class="postimpress-3 bottom__content--item ">Гоген</div>
+                                    <div class="postimpress-4 bottom__content--item ">Сёра</div>
+                                    <div class="postimpress-4 bottom__content--item ">Сёра</div>
 
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bottom__item ">
+                            <button class=" bottom__button">Авангард</button>
+                            <div class=" bottom__content ">
+                                <div class="bottom__scroll " data-simplebar data-simplebar-scrollbar-max-size="28 ">
+                                    <div class="avangard-1 bottom__content--item ">Кандинский</div>
+                                    <div class="avangard-2 bottom__content--item ">Маринетти</div>
+                                    <div class="avangard-3 bottom__content--item ">Малевич</div>
+                                    <div class="avangard-4 bottom__content--item ">Пикассо</div>
+                                    <div class="avangard-4 bottom__content--item ">Пикассо</div>
 
-                                </li>
-                                <li class="bottom__menu--item ">
-                                    <div class="bottom__menu--title ">
-                                        <a href="# " class="bottom__menu--link ">Импрессионизм</a>
-                                        <span class="bottom__menu--icon "></span>
-                                    </div>
-                                    <div class="bottom__menu--content ">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bottom__item ">
+                            <button class=" bottom__button">Футуризм</button>
+                            <div class=" bottom__content ">
+                                <div class="bottom__scroll " data-simplebar data-simplebar-scrollbar-max-size="28 ">
+                                    <div class="futurism-1 bottom__content--item ">Карра</div>
+                                    <div class="futurism-2 bottom__content--item ">Прателла</div>
+                                    <div class="futurism-3 bottom__content--item ">Северини</div>
+                                    <div class="futurism-4 bottom__content--item ">Балла</div>
+                                    <div class="futurism-4 bottom__content--item ">Балла</div>
 
-                                        <div class="bottom__menu--scroll " data-simplebar data-simplebar-scrollbar-max-size="28">
-                                            <div class="impress-1 bottom__content--item ">Моне</div>
-                                            <div class="impress-2 bottom__content--item ">Сислей</div>
-                                            <div class="impress-3 bottom__content--item ">Мане</div>
-                                            <div class="impress-4 bottom__content--item ">Ренуар</div>
-                                            <div class="impress-4 bottom__content--item ">Ренуар</div>
-                                        </div>
-
-
-                                    </div>
-
-                                </li>
-                                <li class="bottom__menu--item ">
-                                    <div class="bottom__menu--title ">
-                                        <a href="# " class="bottom__menu--link ">Постимпрессионизм</a>
-                                        <span class="bottom__menu--icon "></span>
-                                    </div>
-                                    <div class="bottom__menu--content ">
-
-                                        <div class="bottom__menu--scroll " data-simplebar data-simplebar-scrollbar-max-size="28">
-                                            <div class="postimpress-1 bottom__content--item ">Ван Гог</div>
-                                            <div class="postimpress-2 bottom__content--item ">Сезанн</div>
-                                            <div class="postimpress-3 bottom__content--item ">Гоген</div>
-                                            <div class="postimpress-4 bottom__content--item ">Сёра</div>
-                                            <div class="postimpress-4 bottom__content--item ">Сёра</div>
-                                        </div>
-
-
-                                    </div>
-                                </li>
-                                <li class="bottom__menu--item ">
-                                    <div class="bottom__menu--title ">
-                                        <a href="# " class="bottom__menu--link ">Авангард</a>
-                                        <span class="bottom__menu--icon "></span>
-                                    </div>
-                                    <div class="bottom__menu--content ">
-
-                                        <div class="bottom__menu--scroll " data-simplebar data-simplebar-scrollbar-max-size="28">
-                                            <div class="avangard-1 bottom__content--item ">Кандинский</div>
-                                            <div class="avangard-2 bottom__content--item ">Маринетти</div>
-                                            <div class="avangard-3 bottom__content--item ">Малевич</div>
-                                            <div class="avangard-4 bottom__content--item ">Пикассо</div>
-                                            <div class="avangard-4 bottom__content--item ">Пикассо</div>
-                                        </div>
+                                </div>
+                            </div>
+                        </li>
 
 
-                                    </div>
-                                </li>
-                                <li class="bottom__menu--item ">
-                                    <div class="bottom__menu--title ">
-                                        <a href="# " class="bottom__menu--link ">Футуризм</a>
-                                        <span class="bottom__menu--icon "></span>
-                                    </div>
-                                    <div class="bottom__menu--content ">
-                                        <div class="bottom__menu--scroll " data-simplebar data-simplebar-scrollbar-max-size="28">
-                                            <div class="futurism-1 bottom__content--item ">Карра</div>
-                                            <div class="futurism-2 bottom__content--item ">Прателла</div>
-                                            <div class="futurism-3 bottom__content--item ">Северини</div>
-                                            <div class="futurism-4 bottom__content--item ">Балла</div>
-                                            <div class="futurism-4 bottom__content--item ">Балла</div>
-
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="bottom__menu--search1920 ">
-                                    <form action=" " class="bottom__menu--form ">
-                                        <button aria-label="Поиск " type="submit" class="form__search--icon "></button>
-                                        <input type="text" placeholder="Поиск по сайту " name="search " class="form__search--input ">
-
-                                    </form>
-                                </li>
-
-                            </ul>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                                <defs>
-                                  <filter id="blur" x="0" y="0">
-                                      <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
-                                  </filter>
-                                </defs>
-                                </svg>
-
-
-                        </div>
-                    </div>
-
+                    </ul>
 
                 </div>
+                <div class="bottom__search1920 ">
+                    <form action=" " class="bottom__form ">
+                        <button aria-label="Поиск " type="submit" class="bottom__search "></button>
+                        <input type="text" placeholder="Поиск по сайту " name="search " class="bottom__input">
+
+                    </form>
+                </div>
+
             </div>
         </div>
-
 
     </header>
     <section class="banner ">
@@ -215,8 +178,6 @@
 
 
     </section>
-
-
 </body>
 
 </html>

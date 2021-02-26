@@ -1,146 +1,143 @@
 * {
-    box-sizing: border-box;
+ box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'OpenSans-Regular';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/OpenSans-Regular.woff') format('woff');
+ font-family: 'OpenSans-Regular';
+ font-display: auto;
+ font-style: normal;
+ font-weight: 400;
+ src: url('../fonts/OpenSans-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'OpenSans-SemiBold';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/OpenSans-Bold.woff') format('woff');
+ font-family: 'OpenSans-SemiBold';
+ font-display: auto;
+ font-style: normal;
+ font-weight: 600;
+ src: url('../fonts/OpenSans-SemiBold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'OpenSans-Bold';
-    font-style: normal;
-    font-weight: 800;
-    src: url('../fonts/OpenSans-Bold.woff') format('woff');
+ font-family: 'OpenSans-Bold';
+ font-display: auto;
+ font-style: normal;
+ font-weight: 800;
+ src: url('../fonts/OpenSans-Bold.woff') format('woff');
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "OpenSans-Regular";
-    font-style: normal;
-    font-weight: 400;
-    background-color: #ffffff;
-    font-size: 16px;
-    line-height: 32px;
-    color: #333333;
+html, body {
+ margin: 0;
+ padding: 0;
+ font-family: "OpenSans-Regular";
+ font-style: normal;
+ font-weight: 400;
+ background-color: #ffffff;
+ font-size: 16px;
+ line-height: 32px;
+ color: #333333;
 }
 
 html {
-    overflow-x: hidden;
+ overflow-x: hidden;
 }
 
 img {
-    max-width: 100%;
+ max-width: 100%;
 }
 
 input {
-    padding: 0;
+ padding: 0;
 }
 
 menu {
-    padding: 0;
+ padding: 0;
 }
 
-ul,
-h1,
-h2,
-button {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+ul, h1, h2, button {
+ margin: 0;
+ padding: 0;
+ list-style: none;
 }
 
 h2 {
-    font-family: 'OpenSans-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 65px;
-    color: #333333;
+ font-family: 'OpenSans-Regular';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 48px;
+ line-height: 65px;
+ color: #333333;
 }
 
 a {
-    text-decoration: none;
+ text-decoration: none;
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+ margin-top: 0;
+ margin-bottom: 0;
 }
 
-input,
-.button,
-.burger,
-.header__search {
-    outline: none;
+input, button, #burger, #header__search {
+ outline: none;
+ border: none;
+ cursor: pointer;
 }
 
 .container {
-    box-sizing: border-box;
-    padding: 0 160px;
-    min-width: 1920px;
-    margin: 0;
+ box-sizing: border-box;
+ padding: 0 160px;
+ min-width: 1920px;
+ margin: 0;
 }
 
-#search__icon,
-#search__icon--close {
-    border: none;
-    outline: none;
-    cursor: pointer;
+#search__icon, #search__icon--close {
+ border: none;
+ outline: none;
+ cursor: pointer;
 }
 
 @media (min-width: 1024px) and (max-width: 1919px) {
-    .site__container {
-        min-width: 1024px;
-        max-width: 1919px;
-    }
-    .container {
-        padding: 0 50px;
-        min-width: 924px;
-        max-width: 1819px;
-    }
+ .site__container {
+  min-width: 1024px;
+  max-width: 1919px;
+ }
+ .container {
+  padding: 0 50px;
+  min-width: 924px;
+  max-width: 1819px;
+ }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .site__container {
-        min-width: 768px;
-        max-width: 1023px;
-    }
-    .container {
-        padding: 0 50px;
-        min-width: 668px;
-        max-width: 1023px;
-    }
+ .site__container {
+  min-width: 768px;
+  max-width: 1023px;
+ }
+ .container {
+  padding: 0 50px;
+  min-width: 668px;
+  max-width: 1023px;
+ }
 }
 
 @media (max-width: 767px) {
-    body {
-        font-size: 14px;
-        line-height: 28px;
-    }
-    h2 {
-        font-size: 28px;
-        line-height: 38.13px;
-        font-weight: 400;
-    }
-    .site__container {
-        min-width: 320px;
-        max-width: 767px;
-    }
-    .container {
-        padding: 0 15px;
-        min-width: 290px;
-        max-width: 737px;
-    }
+ body {
+  font-size: 14px;
+  line-height: 28px;
+ }
+ h2 {
+  font-size: 28px;
+  line-height: 38.13px;
+  font-weight: 400;
+ }
+ .site__container {
+  min-width: 320px;
+  max-width: 767px;
+ }
+ .container {
+  padding: 0 15px;
+  min-width: 290px;
+  max-width: 737px;
+ }
 }
