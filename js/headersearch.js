@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
             const burger = document.querySelector('#burger');
-            const search = document.querySelector('header__search');
+            const search = document.querySelector('.header__search');
 
             let active = false;
 

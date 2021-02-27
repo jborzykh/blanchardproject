@@ -26,9 +26,9 @@
 .header__logo {
  flex-shrink: 0;
  width: 175px;
- height: 39px;
- margin-right: 179px;
  padding-left: 2px;
+ height: 39px;
+ margin-right: auto;
 }
 
 .top__nav {
@@ -36,14 +36,14 @@
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
+ margin-right: 281px;
 }
 
 .top__list {
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
- margin-right: 279px;
- padding-top: 7px;
+ padding-top: 6px;
 }
 
 .top__item {

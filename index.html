@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/burgersearch.css">
     <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="css/displaynone.css">
     <script src="js/burgermenu.js"></script>
     <script src="js/headerbottommenu.js"></script>
@@ -18,6 +20,10 @@
     <script src="js/headersearchonclose.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -34,7 +40,7 @@
                         <img src="img/logo1920.svg" alt="Logo">
                     </picture>
                 </a>
-                <nav class="top__nav" id="menu">
+                <nav class="top__nav menu" id="menu">
                     <ul class=" top__list ">
                         <li class="top__item "><a href="# " class="top__link ">О нас</a></li>
                         <li class="top__item "><a href="# " class="top__link ">Галерея</a></li>
@@ -44,22 +50,23 @@
                         <li class="top__item "><a href="# " class="top__link ">Проекты</a></li>
                         <li class="top__item "><a href="# " class="top__link ">Контакты</a></li>
                     </ul>
-                    <div class="enter">
-                        <span class="enter__icon "></span>
-                        <a href="# " class="top__link top__link_small ">Войти</a>
-                    </div>
+
 
 
                 </nav>
-                <button aria-label="Меню" id="burger">
+                <div class="enter">
+                    <span class="enter__icon "></span>
+                    <a href="# " class="top__link top__link_small ">Войти</a>
+                </div>
+                <button aria-label="Меню" id="burger" class="burger">
                     <span></span>
                 </button>
-                <div id="header__search">
-                    <button aria-label="Поиск" type="submit" id="search__icon"></button>
+                <div id="header__search" class="header__search">
+                    <button aria-label="Поиск" type="submit" id="search__icon" class="search__icon"></button>
                     <form>
-                        <input type="text" id="search__input" name="search" autocomplete="off">
+                        <input type="text" id="search__input" class="search__input" name="search" autocomplete="off">
                     </form>
-                    <button aria-label="Поиск" type="submit" id="search__icon--close"></button>
+                    <button aria-label="Поиск" type="submit" id="search__icon--close" class="search__icon--close"></button>
                 </div>
             </div>
         </div>
@@ -174,6 +181,75 @@
             прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда
             внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны
             быть разоблачены.
+        </div>
+
+
+    </section>
+    <section class="gallery">
+        <div class="gallery__content">
+            <div class="gallery__left">
+                <h2 class="gallery__heading">Галерея</h2>
+                <span>Фильтровать по:</span>
+                <div class="gallery__select">
+
+                </div>
+                <div class="gallery__text">
+                    Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+                </div>
+
+            </div>
+            <div class="gallery__right">
+                <div class="swiper-pagination">
+                    <span class="swiper-pagination-current">1</span>
+                    <span class="swiper-pagination-total">3</span>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-container ">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide ">Slide 1</div>
+                        <div class="swiper-slide ">Slide 2</div>
+                        <div class="swiper-slide ">Slide 3</div>
+                        <div class="swiper-slide ">Slide 4</div>
+                        <div class="swiper-slide ">Slide 5</div>
+                        <div class="swiper-slide ">Slide 6</div>
+                        <div class="swiper-slide ">Slide 7</div>
+                        <div class="swiper-slide ">Slide 8</div>
+                        <div class="swiper-slide ">Slide 9</div>
+                        <div class="swiper-slide ">Slide 10</div>
+                        <div class="swiper-slide ">Slide 11</div>
+                        <div class="swiper-slide ">Slide 12</div>
+                        <div class="swiper-slide ">Slide 13</div>
+                        <div class="swiper-slide ">Slide 14</div>
+                        <div class="swiper-slide ">Slide 15</div>
+                        <div class="swiper-slide ">Slide 16</div>
+                        <div class="swiper-slide ">Slide 17</div>
+                        <div class="swiper-slide ">Slide 18</div>
+
+                    </div>
+
+                </div>
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        slidesPerView: 3,
+                        slidesPerColumn: 2,
+                        spaceBetween: 50,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            type: 'fraction',
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+
+                    });
+                </script>
+
+                <div class="gallery__text768 ">
+                    Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="# " class=" ">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+                </div>
+            </div>
         </div>
 
 

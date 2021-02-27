@@ -78,7 +78,7 @@ p {
  margin-bottom: 0;
 }
 
-input, button, #burger, #header__search {
+input, button, .burger, .header__search, .search__icon, .search__icon--close {
  outline: none;
  border: none;
  cursor: pointer;
@@ -89,12 +89,6 @@ input, button, #burger, #header__search {
  padding: 0 160px;
  min-width: 1920px;
  margin: 0;
-}
-
-#search__icon, #search__icon--close {
- border: none;
- outline: none;
- cursor: pointer;
 }
 
 @media (min-width: 1024px) and (max-width: 1919px) {
