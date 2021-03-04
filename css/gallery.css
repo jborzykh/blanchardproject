@@ -1,5 +1,5 @@
 .gallery {
- min-width: 1920px;
+ width: 100%;
  height: 995px;
  margin-bottom: 80px;
  background-image: url(../img/gallery/galleryfon.png);
@@ -21,7 +21,6 @@
  display: -webkit-box;
  display: -ms-flexbox;
  display: flex;
- justify-content: space-between;
  padding-top: 80px;
  padding-bottom: 80px;
 }
@@ -35,10 +34,10 @@
  -ms-flex-direction: column;
  flex-direction: column;
  width: 400px;
+ margin-right: 54px;
 }
 
 .gallery__select {
- padding-left: 5px;
  width: 400px;
  height: 120px;
  margin-bottom: 516px;
@@ -70,7 +69,7 @@
  min-height: 40px;
  padding-bottom: 0;
  background-color: transparent;
- padding-left: 14px;
+ padding-left: 17px;
  padding-top: 2px;
 }
 
@@ -154,44 +153,53 @@
 }
 
 .gallery__text {
- padding-left: 4px;
  font-family: "OpenSans-Semibold";
 }
 
 .gallery__right {
- position: relative;
  width: 1150px;
 }
 
+.gallery__count {
+ display: flex;
+ justify-content: flex-start;
+ width: 140px;
+ margin-bottom: 30px;
+ margin-top: 25px;
+}
+
 .swiper-pagination {
- top: 25px;
- left: 40px;
- bottom: 0;
- width: 5%;
+ position: relative;
+ max-width: 55px;
  height: 23px;
  line-height: 32px;
  color: #FFFFFF;
+ margin-left: 11px;
+ margin-right: 12px;
 }
 
-div.swiper-pagination.swiper-pagination-fraction {
- margin-bottom: 30px;
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal>.swiper-pagination-bullets {
+ bottom: 0;
 }
 
 div.swiper-button-next, div.swiper-button-prev {
+ position: relative;
  margin-top: 0;
- position: absolute;
- top: 25px;
  width: 30px;
  height: 30px;
  background: url(../img/gallery/krug.svg);
 }
 
 .swiper-button-prev {
+ position: relative;
  left: 0;
+ top: 0;
 }
 
 .swiper-button-next {
- left: 100px;
+ position: relative;
+ right: 0;
+ top: 0;
 }
 
 .swiper-button-prev:after, .swiper-button-next:after {
@@ -202,7 +210,6 @@ div.swiper-button-next, div.swiper-button-prev {
 .swiper-container {
  width: 1150px;
  height: 750px;
- top: 85px;
 }
 
 .swiper-wrapper {
