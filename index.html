@@ -15,12 +15,15 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/catalog.css">
 
     <link rel="stylesheet" href="css/displaynone.css">
     <script src="js/burgermenu.js"></script>
     <script src="js/headerbottommenu.js"></script>
     <script src="js/headersearch.js"></script>
     <script src="js/headersearchonclose.js"></script>
+    <script src="js/accordioncatalog.js"></script>
+
 
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 
@@ -228,16 +231,15 @@
                     </div>
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
                             <div class="swiper-slide "></div>
                             <div class="swiper-slide "></div>
                             <div class="swiper-slide "></div>
@@ -280,8 +282,132 @@
                 </script>
             </div>
         </section>
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__heading">
+                    <h3 class="catalog__title">Каталог</h3>
+                    <ul class="catalog__flags">
+                        <li class="flag">
+                            <button class="flag__btn france" data-path="one"></button>
+                        </li>
+                        <li class="flag">
+                            <button class="flag__btn germany" data-path="two"></button>
+                        </li>
+                        <li class="flag">
+                            <button class="flag__btn italy" data-path="three"></button>
+                        </li>
+                        <li class="flag">
+                            <button class="flag__btn russia" data-path="four"></button>
+                        </li>
+                        <li class="flag">
+                            <button class="flag__btn belgium" data-path="five"></button>
+                    </ul>
+                </div>
+                <article class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины,
+                    стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                </article>
 
-        <div class="pixel "></div>
+                <div class="catalog__content">
+                    <div class="catalog__left">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Доменико Гирландайо</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <article class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени). </article>
+                        </div>
+                    </div>
+                    <div class="catalog__right">
+                        <div class="accordion__container">
+                            <div class="accordion">
+                                <ul class="accordion__items">
+                                    <li class="accordion__item">
+                                        <div class="accordion__title">
+                                            <h4>C 1400 по 1499 гг.</h4>
+                                            <span class="accordion__icon"></span>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
+                                                provident?
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__title">
+                                            <h4>C 1500 по 1599 гг.</h4>
+                                            <span class="accordion__icon"></span>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
+                                                provident?
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__title">
+                                            <h4>C 1600 по 1699 гг.</h4>
+                                            <span class="accordion__icon"></span>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
+                                                provident?
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__title">
+                                            <h4>C 1700 по 1799 гг.</h4>
+                                            <span class="accordion__icon"></span>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
+                                                provident?
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__title">
+                                            <h4>C 1800 по 1899 гг.</h4>
+                                            <span class="accordion__icon"></span>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
+                                                provident?
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__title">
+                                            <h4>C 1900 по 1999 гг.</h4>
+                                            <span class="accordion__icon"></span>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
+                                                provident?
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion__item">
+                                        <div class="accordion__title">
+                                            <h4>C 2000 г.</h4>
+                                            <span class="accordion__icon"></span>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
+                                                provident?
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="pixel">
+        </div>
     </div>
 </body>
 

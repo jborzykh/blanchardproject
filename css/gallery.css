@@ -162,20 +162,16 @@
 
 .gallery__count {
  display: flex;
- justify-content: flex-start;
- width: 140px;
+ justify-content: space-between;
  margin-bottom: 30px;
  margin-top: 25px;
 }
 
 .swiper-pagination {
  position: relative;
- max-width: 55px;
  height: 23px;
  line-height: 32px;
  color: #FFFFFF;
- margin-left: 11px;
- margin-right: 12px;
 }
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal>.swiper-pagination-bullets {
