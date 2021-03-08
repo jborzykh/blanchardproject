@@ -22,12 +22,18 @@
     <script src="js/headerbottommenu.js"></script>
     <script src="js/headersearch.js"></script>
     <script src="js/headersearchonclose.js"></script>
-    <script src="js/accordioncatalog.js"></script>
+
+
 
 
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/accordioncatalog.js"></script>
+
+
+
 
 </head>
 
@@ -241,25 +247,25 @@
                             <div class="swiper-slide"></div>
                             <div class="swiper-slide"></div>
                             <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
-                            <div class="swiper-slide "></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
                         </div>
                     </div>
 
@@ -283,6 +289,7 @@
             </div>
         </section>
         <section class="catalog">
+
             <div class="container">
                 <div class="catalog__heading">
                     <h3 class="catalog__title">Каталог</h3>
@@ -294,7 +301,7 @@
                             <button class="flag__btn germany" data-path="two"></button>
                         </li>
                         <li class="flag">
-                            <button class="flag__btn italy" data-path="three"></button>
+                            <button class="flag__btn italy flag__btn-active" data-path="three"></button>
                         </li>
                         <li class="flag">
                             <button class="flag__btn russia" data-path="four"></button>
@@ -303,10 +310,41 @@
                             <button class="flag__btn belgium" data-path="five"></button>
                     </ul>
                 </div>
-                <article class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины,
-                    стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
-                </article>
 
+                <div class="tab-content" data-target="one">
+
+                    <div class="catalog__text">Les actionnaires des plus grandes entreprises, qui représentent un exemple frappant du type de culture politique de l'Europe continentale, seront déclarés violant les normes universelles d'éthique et de moralité. N'étant qu'une partie
+                        de la situation dans son ensemble, cherchant à supplanter la production traditionnelle, la nanotechnologie reste encore aujourd'hui le lot des libéraux, désireux d'être fonctionnellement divisés en éléments indépendants.
+                    </div>
+                </div>
+
+                <div class="tab-content" data-target="two">
+
+                    <div class="catalog__text">Die Aktionäre der größten Unternehmen, die ein anschauliches Beispiel für die kontinentaleuropäische politische Kultur darstellen, werden als Verstoß gegen die universellen Normen der Ethik und Moral erklärt. Die Nanotechnologie ist
+                        nur ein Teil des Gesamtbildes und versucht, die traditionelle Produktion zu verdrängen. Sie ist bis heute das Los der Liberalen, die bestrebt sind, funktional in unabhängige Elemente unterteilt zu werden.
+                    </div>
+                </div>
+
+
+                <div class="italian tab-content tab-content-active" data-target="three">
+                    <div class="catalog__text">Gli azionisti delle maggiori società, che rappresentano un vivido esempio del tipo di cultura politica dell'Europa continentale, saranno dichiarati violatori delle norme universali di etica e moralità. Essendo solo una parte del quadro
+                        generale, che cerca di soppiantare la produzione tradizionale, la nanotecnologia rimane ancora oggi il destino dei liberali, che sono desiderosi di essere funzionalmente divisi in elementi indipendenti.
+                    </div>
+                </div>
+
+
+                <div class="russian tab-content " data-target="four">
+                    <div class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины,
+                        стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                    </div>
+                </div>
+
+
+                <div class="tab-content" data-target="five">
+                    <div class="catalog__text">The shareholders of the largest companies, which represent a vivid example of the continental European type of political culture, will be declared violating the universal norms of ethics and morality. As only part of the big picture,
+                        seeking to supplant traditional manufacturing, nanotechnology remains to this day the lot of liberals who are eager to be functionally dispersed into independent elements.
+                    </div>
+                </div>
                 <div class="catalog__content">
                     <div class="catalog__left">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
@@ -314,8 +352,9 @@
                             <h4 class="painter__name">Доменико Гирландайо</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
-                            <article class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
-                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени). </article>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
                         </div>
                     </div>
                     <div class="catalog__right">
@@ -405,6 +444,8 @@
                     </div>
                 </div>
             </div>
+
+
         </section>
         <div class="pixel">
         </div>

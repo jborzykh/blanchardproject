@@ -1,12 +1,12 @@
 window.addEventListener('DOMContentLoaded', function() {
-    let accordion = document.querySelector('.bottom__action');
-    let items = accordion.querySelectorAll('.bottom__item');
-    let title = accordion.querySelectorAll('.bottom__button');
+    let bottomAction = document.querySelector('.bottom__action');
+    let bottomItems = bottomAction.querySelectorAll('.bottom__item');
+    let bottomTitle = bottomAction.querySelectorAll('.bottom__button');
 
-    function toggleAccordion() {
+    function toggleMenu() {
         let thisItem = this.parentNode;
 
-        items.forEach(item => {
+        bottomItems.forEach(item => {
             if (thisItem == item) {
 
                 thisItem.classList.toggle('active');
@@ -17,5 +17,5 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    title.forEach(question => question.addEventListener('click', toggleAccordion));
+    bottomTitle.forEach(question => question.addEventListener('click', toggleMenu));
 })

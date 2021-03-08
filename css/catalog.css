@@ -1,137 +1,163 @@
-.catalog {
- height: 1390px;
- margin-bottom: 80px;
-}
-
-.catalog__heading {
- display: -webkit-box;
- display: -ms-flexbox;
- display: flex;
- -webkit-box-pack: justify;
- -ms-flex-pack: justify;
- justify-content: flex-start;
- margin-bottom: 15px;
-}
-
-.catalog__title {
- margin-right: 41px;
-}
-
-.catalog__flags {
- padding-top: 10px;
- display: -webkit-box;
- display: -ms-flexbox;
- display: flex;
-}
-
-.flag__btn {
- width: 46px;
- height: 46px;
- background: #fff;
-}
-
-.flag__btn:not(:last-child) {
- margin-right: 50px;
-}
-
-.france {
- background-image: url('../img/catalog/flag1.png');
-}
-
-.germany {
- background-image: url('../img/catalog/flag2.png');
-}
-
-.italy {
- background-image: url('../img/catalog/flag3.png');
-}
-
-.russia {
- background-image: url('../img/catalog/flag4.png');
-}
-
-.belgium {
- background-image: url('../img/catalog/flag5.png');
-}
-
-.catalog__text {
- margin-bottom: 50px;
- width: 1080px;
- height: 117px;
-}
-
-.catalog__content {
- display: -webkit-box;
- display: -ms-flexbox;
- display: flex;
-}
-
-.catalog__left {
- width: 750px;
- margin-right: 50px;
-}
-
-.catalog__painter {
- margin-bottom: 30px;
-}
-
-.painter__bio {
- display: -webkit-box;
- display: -ms-flexbox;
- display: flex;
- -webkit-box-orient: vertical;
- -webkit-box-direction: normal;
- -ms-flex-direction: column;
- flex-direction: column;
-}
-
-.painter__name {
- margin-bottom: 15px;
-}
-
-.painter__life {}
-
-.catalog__right {
- width: 800px;
-}
-
-.accordion__title {
- display: flex;
- justify-content: space-between;
- height: 114px;
- align-items: center;
- position: relative;
- cursor: pointer;
- border-bottom: 1px solid #CACACA;
-}
-
-.accordion__title:first-child {
- border-top: 1px solid #CACACA;
-}
-
-.accordion__icon {
- width: 50px;
- height: 50px;
- background-image: url("../img/catalog/accordionarrow.png");
- background-repeat: no-repeat;
- transform: rotate(0deg);
- transition: all .4s ease-in-out;
-}
-
-.accordion__content {
- max-height: 0;
- overflow: hidden;
- transition: all .6s ease-in-out;
-}
-
-.accordion__content p {
- padding-bottom: 38px;
-}
-
-.active .accordion__content {
- max-height: 208px;
-}
-
-.active .accordion__icon {
- transform: rotate(180deg);
-}
+  .catalog {
+   height: 1390px;
+   margin-bottom: 80px;
+  }
+  
+  .catalog__heading {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   margin-bottom: 15px;
+  }
+  
+  .catalog__title {
+   margin-right: 41px;
+  }
+  
+  .catalog__flags {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+  }
+  
+  .flag__btn {
+   margin-top: 12px;
+   width: 46px;
+   height: 46px;
+   background: #fff;
+  }
+  
+  .flag:not(:last-child) {
+   margin-right: 50px;
+  }
+  
+  .france {
+   background-image: url('../img/catalog/flag1.png');
+  }
+  
+  .germany {
+   background-image: url('../img/catalog/flag2.png');
+  }
+  
+  .italy {
+   background-image: url('../img/catalog/flag3.png');
+  }
+  
+  .russia {
+   background-image: url('../img/catalog/flag4.png');
+  }
+  
+  .belgium {
+   background-image: url('../img/catalog/flag5.png');
+  }
+  
+  .tab-content {
+   display: none;
+  }
+  
+  .tab-content-active {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   flex-direction: column;
+  }
+  
+  .flag__btn-active {
+   margin-left: -10px;
+   margin-right: -10px;
+   margin-top: 0;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 66px;
+   height: 66px;
+   border: 2px solid #9D5CD0;
+   border-radius: 50px;
+  }
+  
+  .catalog__text {
+   margin-bottom: 50px;
+   width: 1080px;
+   height: 117px;
+  }
+  
+  .catalog__content {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+  }
+  
+  .catalog__left {
+   width: 750px;
+   margin-right: 50px;
+  }
+  
+  .catalog__painter {
+   margin-bottom: 20px;
+  }
+  
+  .painter__bio {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+  }
+  
+  .painter__life {
+   font-size: 75%;
+  }
+  
+  .catalog__right {
+   width: 800px;
+  }
+  
+  .accordion__title {
+   display: flex;
+   justify-content: space-between;
+   height: 114px;
+   align-items: center;
+   position: relative;
+   cursor: pointer;
+   border-bottom: 1px solid #CACACA;
+  }
+  
+  .accordion__title h4 {
+   padding-top: 36px;
+   height: 100%;
+  }
+  
+  .accordion__title:first-child {
+   border-top: 1px solid #CACACA;
+   height: 113px;
+  }
+  
+  .accordion__icon {
+   width: 50px;
+   height: 50px;
+   background-image: url("../img/catalog/accordionarrow.png");
+   background-repeat: no-repeat;
+   transform: rotate(180deg);
+   transition: all .4s ease-in-out;
+  }
+  
+  .accordion__content {
+   max-height: 0;
+   overflow: hidden;
+   transition: all .6s ease-in-out;
+  }
+  
+  .accordion__content p {
+   padding-bottom: 38px;
+  }
+  
+  .active .accordion__content {
+   max-height: 208px;
+  }
+  
+  .active .accordion__icon {
+   transform: rotate(0deg);
+  }
