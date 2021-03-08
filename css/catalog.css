@@ -13,7 +13,8 @@
   }
   
   .catalog__title {
-   margin-right: 41px;
+   margin-right: 44px;
+   margin-left: -3px;
   }
   
   .catalog__flags {
@@ -126,13 +127,12 @@
   }
   
   .accordion__title h4 {
-   padding-top: 36px;
+   padding-top: 37px;
    height: 100%;
   }
   
   .accordion__title:first-child {
    border-top: 1px solid #CACACA;
-   height: 113px;
   }
   
   .accordion__icon {
@@ -140,7 +140,7 @@
    height: 50px;
    background-image: url("../img/catalog/accordionarrow.png");
    background-repeat: no-repeat;
-   transform: rotate(180deg);
+   transform: rotate(0deg);
    transition: all .4s ease-in-out;
   }
   
@@ -150,14 +150,38 @@
    transition: all .6s ease-in-out;
   }
   
-  .accordion__content p {
+  .active .accordion__content {
+   padding-top: 25px;
    padding-bottom: 38px;
+   max-height: 341px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
   }
   
-  .active .accordion__content {
-   max-height: 208px;
+  .content__painters {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   width: 208px;
+  }
+  
+  .content__painters:not(:last-child) {
+   margin-right: 50px;
+  }
+  
+  .painter__link {
+   color: #333333;
+  }
+  
+  .painter__link--purple {
+   color: #9D5CD0;
   }
   
   .active .accordion__icon {
-   transform: rotate(0deg);
+   transform: rotate(180deg);
   }
