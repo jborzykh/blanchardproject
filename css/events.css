@@ -1,0 +1,116 @@
+ .events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 80px;
+ }
+ 
+ .events__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 700px;
+  margin-bottom: 50px;
+ }
+ 
+ .events__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 500px;
+ }
+ 
+ .event__card:not(:last-child) {
+  margin-right: 50px;
+ }
+ 
+ .events__img {
+  width: 500px;
+  height: 300px;
+  margin-bottom: -10px;
+ }
+ 
+ .card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 13px;
+  border-bottom: 1px solid #9D5CD0;
+  border-left: 1px solid #9D5CD0;
+  border-right: 1px solid #9D5CD0;
+  padding-left: 50px;
+  padding-bottom: 43px;
+  height: 400px;
+  width: 500px;
+ }
+ 
+ .events__title {
+  margin-bottom: 16px;
+ }
+ 
+ .card__title {
+  margin-bottom: 3px;
+ }
+ 
+ .card__date {
+  font-family: "OpenSans-SemiBold";
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  color: #999999;
+  padding-right: 18px;
+  margin-bottom: 3px;
+ }
+ 
+ .card__text {
+  width: 400px;
+  margin-bottom: 17px;
+ }
+ 
+ .card__text--short {
+  margin-bottom: 48px;
+ }
+ 
+ .card__link {
+  width: 92px;
+  height: 31px;
+  border-bottom: 1px solid #9D5CD0;
+ }
+ 
+ .events__button {
+  display: flex;
+  justify-content: center;
+ }
+ 
+ .event__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 17px 33px;
+  width: 188px;
+  height: 59px;
+  border: 2px solid #9D5CD0;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-family: "OpenSans-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #9D5CD0;
+  margin: 0px 10px;
+  background-color: #ffffff;
+ }
