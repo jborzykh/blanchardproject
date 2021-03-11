@@ -76,6 +76,22 @@
      border-radius: 50px;
     }
     
+    .belgian {
+     color: yellow;
+    }
+    
+    .italian {
+     color: green;
+    }
+    
+    .german {
+     color: brown;
+    }
+    
+    .french {
+     color: red;
+    }
+    
     .catalog__text {
      margin-bottom: 48px;
      width: 1080px;
