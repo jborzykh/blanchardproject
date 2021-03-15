@@ -1,214 +1,242 @@
-    .catalog {
-     min-height: 1390px;
-     margin-bottom: 80px;
-    }
-    
-    .catalog__heading {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     -webkit-box-pack: justify;
-     -ms-flex-pack: justify;
-     margin-bottom: 15px;
-    }
-    
-    .catalog__title {
-     margin-right: 41px;
-    }
-    
-    .catalog__flags {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-    }
-    
-    .flag__btn {
-     margin-top: 12px;
-     width: 46px;
-     height: 46px;
-     background: #fff;
-    }
-    
-    .flag:not(:last-child) {
-     margin-right: 50px;
-    }
-    
-    .france {
-     background-image: url('../img/catalog/flag1.png');
-    }
-    
-    .germany {
-     background-image: url('../img/catalog/flag2.png');
-    }
-    
-    .italy {
-     background-image: url('../img/catalog/flag3.png');
-    }
-    
-    .russia {
-     background-image: url('../img/catalog/flag4.png');
-    }
-    
-    .belgium {
-     background-image: url('../img/catalog/flag5.png');
-    }
-    
-    .tab-content {
-     display: none;
-    }
-    
-    .tab-content-active {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     flex-direction: column;
-    }
-    
-    .flag__btn-active {
-     margin-top: 2px;
-     margin-left: -10px;
-     margin-right: -10px;
-     background-repeat: no-repeat;
-     background-position: center;
-     width: 66px;
-     height: 66px;
-     border: 2px solid #9D5CD0;
-     border-radius: 50px;
-    }
-    
-    .belgian {
-     color: yellow;
-    }
-    
-    .italian {
-     color: green;
-    }
-    
-    .german {
-     color: brown;
-    }
-    
-    .french {
-     color: red;
-    }
-    
-    .catalog__text {
-     margin-bottom: 48px;
-     width: 1080px;
-     height: 117px;
-    }
-    
-    .catalog__content {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-    }
-    
-    .catalog__left {
-     width: 750px;
-     margin-right: 50px;
-    }
-    
-    .catalog__painter {
-     margin-bottom: 20px;
-    }
-    
-    .painter__bio {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     -webkit-box-orient: vertical;
-     -webkit-box-direction: normal;
-     -ms-flex-direction: column;
-     flex-direction: column;
-    }
-    
-    .painter__life {
-     font-size: 75%;
-    }
-    
-    .catalog__right {
-     width: 800px;
-    }
-    
-    .accordion__title:first-child {
-     height: 113px;
-    }
-    
-    .accordion__title {
-     display: flex;
-     justify-content: space-between;
-     height: 114px;
-     align-items: center;
-     position: relative;
-     cursor: pointer;
-    }
-    
-    .accordion__title h4 {
-     padding-top: 36px;
-     height: 100%;
-    }
-    
-    .accordion__item:first-child {
-     border-top: 1px solid #CACACA;
-    }
-    
-    .accordion__item {
-     border-bottom: 1px solid #CACACA;
-    }
-    
-    .accordion__icon {
-     width: 50px;
-     height: 50px;
-     background-image: url("../img/catalog/accordionarrow.png");
-     background-repeat: no-repeat;
-     transform: rotate(0deg);
-     transition: all .4s ease-in-out;
-    }
-    
-    .accordion__content {
-     max-height: 0;
-     overflow: hidden;
-     transition: all .6s ease-in-out;
-    }
-    
-    .active .accordion__content, .accordion__content--open {
-     padding-top: 25px;
-     padding-bottom: 38px;
-     max-height: 342px;
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     border-top: 1px solid #CACACA;
-    }
-    
-    .content__painters {
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: flex;
-     -webkit-box-orient: vertical;
-     -webkit-box-direction: normal;
-     -ms-flex-direction: column;
-     flex-direction: column;
-     width: 208px;
-    }
-    
-    .content__painters:not(:last-child) {
-     margin-right: 50px;
-    }
-    
-    .painter__link {
-     color: #333333;
-    }
-    
-    .painter__link--purple {
-     color: #9D5CD0;
-    }
-    
-    .active .accordion__icon {
-     transform: rotate(180deg);
-    }
-    
-    active .accordion__icon {
-     transform: rotate(180deg);
-    }
+      .catalog {
+       min-height: 1390px;
+       margin-bottom: 80px;
+      }
+      
+      .catalog__heading {
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+       margin-bottom: 18px;
+      }
+      
+      .catalog__title {
+       margin-right: 41px;
+      }
+      
+      .catalog__flags {
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+      }
+      
+      .flag__btn {
+       margin-top: 12px;
+       width: 46px;
+       height: 46px;
+       background: #fff;
+       cursor: pointer;
+      }
+      
+      .flag:not(:last-child) {
+       margin-right: 50px;
+      }
+      
+      .france {
+       background-image: url('../img/catalog/flag1.png');
+      }
+      
+      .germany {
+       background-image: url('../img/catalog/flag2.png');
+      }
+      
+      .italy {
+       background-image: url('../img/catalog/flag3.png');
+      }
+      
+      .russia {
+       background-image: url('../img/catalog/flag4.png');
+      }
+      
+      .belgium {
+       background-image: url('../img/catalog/flag5.png');
+      }
+      
+      .tab-content {
+       display: none;
+      }
+      
+      .tab-content-active {
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       flex-direction: column;
+       -webkit-animation: content 0.5s ease-in;
+       animation: content 0.5s ease-in;
+       -webkit-animation-fill-mode: forwards;
+       animation-fill-mode: forwards;
+      }
+      
+      .flag__btn-active {
+       margin-top: 2px;
+       margin-left: -10px;
+       margin-right: -10px;
+       margin-bottom: -10px;
+       background-repeat: no-repeat;
+       background-position: center;
+       width: 66px;
+       height: 66px;
+       border: 2px solid #9D5CD0;
+       border-radius: 50px;
+       -webkit-animation: content 0.5s ease-in;
+       animation: content 0.5s ease-in;
+       -webkit-animation-fill-mode: forwards;
+       animation-fill-mode: forwards;
+      }
+      
+      @keyframes content {
+       0% {
+        opacity: 0;
+       }
+       100% {
+        opacity: 1;
+       }
+      }
+      
+      @-webkit-keyframes content {
+       0% {
+        opacity: 0;
+       }
+       100% {
+        opacity: 1;
+       }
+      }
+      
+      .belgian {
+       color: yellow;
+      }
+      
+      .italian {
+       color: green;
+      }
+      
+      .german {
+       color: brown;
+      }
+      
+      .french {
+       color: red;
+      }
+      
+      .catalog__text {
+       margin-bottom: 48px;
+       width: 1080px;
+       height: 117px;
+      }
+      
+      .catalog__content {
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+      }
+      
+      .catalog__left {
+       display: none;
+      }
+      
+      .catalog__left-active {
+       display: flex;
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+       flex-direction: column;
+       width: 750px;
+       margin-right: 50px;
+       -webkit-animation: content 0.5s ease-in;
+       animation: content 0.5s ease-in;
+       -webkit-animation-fill-mode: forwards;
+       animation-fill-mode: forwards;
+      }
+      
+      .catalog__painter {
+       margin-bottom: 20px;
+      }
+      
+      .painter__bio {
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+       flex-direction: column;
+      }
+      
+      .painter__life {
+       font-size: 75%;
+      }
+      
+      .catalog__right {
+       width: 800px;
+      }
+      
+      .accordion__title:first-child {
+       height: 114px;
+      }
+      
+      .accordion__title {
+       display: flex;
+       justify-content: space-between;
+       height: 115px;
+       width: 800px;
+       align-items: center;
+       position: relative;
+       cursor: pointer;
+       border-top: 1px solid #CACACA;
+      }
+      
+      .accordion__item:last-child {
+       border-bottom: 1px solid #CACACA;
+      }
+      
+      .accordion__title h4 {
+       padding-top: 36px;
+       height: 100%;
+       color: #333333;
+      }
+      
+      .accordion__icon {
+       width: 50px;
+       height: 50px;
+       background-image: url("../img/catalog/accordionarrow.png");
+       background-repeat: no-repeat;
+       transform: rotate(0deg);
+       transition: all .4s ease-in-out;
+      }
+      
+      .accordion__content {
+       max-height: 0;
+       overflow: hidden;
+       transition: all .6s ease-in-out;
+      }
+      
+      .active .accordion__content, .accordion__content--open {
+       padding-top: 26px;
+       padding-bottom: 40px;
+       max-height: 343px;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       border-top: 1px solid #CACACA;
+      }
+      
+      .content__painters {
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+       flex-direction: column;
+       width: 208px;
+      }
+      
+      .content__painters:not(:last-child) {
+       margin-right: 50px;
+      }
+      
+      .active .accordion__icon {
+       transform: rotate(180deg);
+      }

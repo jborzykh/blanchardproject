@@ -87,6 +87,11 @@
     outline: none;
     border: none;
     cursor: pointer;
+    background: transparent;
+   }
+   
+   button:focus, button:hover, button:active {
+    box-sizing: border-box
    }
    /*.pixel {
    position: absolute;

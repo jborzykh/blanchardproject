@@ -8,6 +8,7 @@
     <title>blanchard</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/commonstyles.css">
+    <link rel="stylesheet" href="css/activestyles.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
     <link rel="stylesheet" href="css/burgersearch.css">
@@ -26,10 +27,12 @@
 
 
 
+
+
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/tabs.js"></script>
+
     <script src="js/accordioncatalog.js"></script>
 
 
@@ -52,22 +55,22 @@
                     </a>
                     <nav class="top__nav menu" id="menu">
                         <ul class=" top__list ">
-                            <li class="top__item"><a href="# " class="top__link">О нас</a></li>
-                            <li class="top__item"><a href="# " class="top__link">Галерея</a></li>
-                            <li class="top__item"><a href="# " class="top__link">Каталог</a></li>
-                            <li class="top__item"><a href="# " class="top__link">События</a></li>
-                            <li class="top__item"><a href="# " class="top__link">Издания</a></li>
-                            <li class="top__item"><a href="# " class="top__link">Проекты</a></li>
-                            <li class="top__item"><a href="# " class="top__link">Контакты</a></li>
+                            <li class="top__item"><a href="#about" class="top__link active__link">О нас</a></li>
+                            <li class="top__item"><a href="#gallery" class="top__link active__link">Галерея</a></li>
+                            <li class="top__item"><a href="#catalog" class="top__link active__link">Каталог</a></li>
+                            <li class="top__item"><a href="#events" class="top__link active__link">События</a></li>
+                            <li class="top__item"><a href="#editions" class="top__link active__link">Издания</a></li>
+                            <li class="top__item"><a href="#projects" class="top__link active__link">Проекты</a></li>
+                            <li class="top__item"><a href="#conacts" class="top__link active__link">Контакты</a></li>
                         </ul>
 
 
 
                     </nav>
-                    <div class="enter">
-                        <span class="enter__icon"></span>
-                        <a href="# " class="top__link top__link_small">Войти</a>
-                    </div>
+
+
+                    <button class="top__link top__link--last top__link_small active__link">Войти</button>
+
                     <button aria-label="Меню" id="burger" class="burger">
                     <span></span>
                 </button>
@@ -87,66 +90,102 @@
                     <div class="bottom__action">
                         <ul class="bottom__list">
                             <li class="bottom__item">
-                                <button class="bottom__button">Реализм</button>
+                                <button class="bottom__button active__link">Реализм</button>
+                                <div class="bottom__content" tabindex="false">
+                                    <div class="bottom__scroll" data-simplebar data-simplebar-scrollbar-max-size="28">
+                                        <div class=" realism-1 bottom__content--item">
+                                            <a href="#" class="bottom__link">Тинторетто</a>
+                                        </div>
+                                        <div class="realism-2 bottom__content--item">
+                                            <a href="#" class="bottom__link">Фридрих</a>
+                                        </div>
+                                        <div class="realism-3 bottom__content--item">
+                                            <a href="#" class="bottom__link">Леонардо</a>
+                                        </div>
+                                        <div class="realism-4 bottom__content--item">
+                                            <a href="#" class="bottom__link">Верроккьо</a>
+                                        </div>
+                                        <div class="realism-4 bottom__content--item"> <a href="#" class="bottom__link">Верроккьо</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="bottom__item">
+                                <button class="bottom__button active__link">Импрессионизм</button>
                                 <div class="bottom__content">
                                     <div class="bottom__scroll" data-simplebar data-simplebar-scrollbar-max-size="28">
-                                        <div class=" realism-1 bottom__content--item">Тинторетто</div>
-                                        <div class="realism-2 bottom__content--item">Фридрих</div>
-                                        <div class="realism-3 bottom__content--item">Леонардо</div>
-                                        <div class="realism-4 bottom__content--item">Верроккьо</div>
-                                        <div class="realism-4 bottom__content--item">Верроккьо</div>
+                                        <div class="impress-1 bottom__content--item">
+                                            <a href="#" class="bottom__link">Моне</a>
+                                        </div>
+                                        <div class="impress-2 bottom__content--item">
+                                            <a href="#" class="bottom__link">Сислей</a>
+                                        </div>
+                                        <div class="impress-3 bottom__content--item">
+                                            <a href="#" class="bottom__link">Мане</a>
+                                        </div>
+                                        <div class="impress-4 bottom__content--item">
+                                            <a href="#" class="bottom__link">Ренуар</a>
+                                        </div>
+                                        <div class="impress-4 bottom__content--item">
+                                            <a href="#" class="bottom__link">Ренуар</a>
+                                        </div>
 
                                     </div>
                                 </div>
                             </li>
                             <li class="bottom__item">
-                                <button class=" bottom__button">Импрессионизм</button>
-                                <div class=" bottom__content">
+                                <button class="bottom__button active__link">Постимпрессионизм</button>
+                                <div class="bottom__content active__link">
                                     <div class="bottom__scroll" data-simplebar data-simplebar-scrollbar-max-size="28">
-                                        <div class="impress-1 bottom__content--item">Моне</div>
-                                        <div class="impress-2 bottom__content--item">Сислей</div>
-                                        <div class="impress-3 bottom__content--item">Мане</div>
-                                        <div class="impress-4 bottom__content--item">Ренуар</div>
-                                        <div class="impress-4 bottom__content--item">Ренуар</div>
+                                        <div class="postimpress-1 bottom__content--item">
+                                            <a href="#" class="bottom__link">Ван Гог</a></div>
+                                        <div class="postimpress-2 bottom__content--item">
+                                            <a href="#" class="bottom__link">Сезанн</a></div>
+                                        <div class="postimpress-3 bottom__content--item">
+                                            <a href="#" class="bottom__link">Гоген</a></div>
+                                        <div class="postimpress-4 bottom__content--item">
+                                            <a href="#" class="bottom__link">Сёра</a></div>
+                                        <div class="postimpress-4 bottom__content--item">
+                                            <a href="#" class="bottom__link">Сёра</a></div>
+
 
                                     </div>
                                 </div>
                             </li>
                             <li class="bottom__item">
-                                <button class=" bottom__button">Постимпрессионизм</button>
-                                <div class=" bottom__content">
-                                    <div class="bottom__scroll" data-simplebar data-simplebar-scrollbar-max-size="28">
-                                        <div class="postimpress-1 bottom__content--item">Ван Гог</div>
-                                        <div class="postimpress-2 bottom__content--item">Сезанн</div>
-                                        <div class="postimpress-3 bottom__content--item">Гоген</div>
-                                        <div class="postimpress-4 bottom__content--item">Сёра</div>
-                                        <div class="postimpress-4 bottom__content--item">Сёра</div>
-
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="bottom__item">
-                                <button class="bottom__button">Авангард</button>
+                                <button class="bottom__button active__link">Авангард</button>
                                 <div class="bottom__content">
                                     <div class="bottom__scroll" data-simplebar data-simplebar-scrollbar-max-size="28">
-                                        <div class="avangard-1 bottom__content--item">Кандинский</div>
-                                        <div class="avangard-2 bottom__content--item">Маринетти</div>
-                                        <div class="avangard-3 bottom__content--item">Малевич</div>
-                                        <div class="avangard-4 bottom__content--item">Пикассо</div>
-                                        <div class="avangard-4 bottom__content--item">Пикассо</div>
+                                        <div class="avangard-1 bottom__content--item">
+                                            <a href="#" class="bottom__link">Кандинский</a></div>
+                                        <div class="avangard-2 bottom__content--item">
+                                            <a href="#" class="bottom__link">Маринетти</a></div>
+                                        <div class="avangard-3 bottom__content--item">
+                                            <a href="#" class="bottom__link">Малевич</a></div>
+                                        <div class="avangard-4 bottom__content--item">
+                                            <a href="#" class="bottom__link">Пикассо</a></div>
+                                        <div class="avangard-4 bottom__content--item">
+                                            <a href="#" class="bottom__link">Пикассо</a></div>
 
                                     </div>
                                 </div>
                             </li>
+
                             <li class="bottom__item">
-                                <button class=" bottom__button">Футуризм</button>
+                                <button class="bottom__button active__link">Футуризм</button>
                                 <div class=" bottom__content">
                                     <div class="bottom__scroll" data-simplebar data-simplebar-scrollbar-max-size="28">
-                                        <div class="futurism-1 bottom__content--item">Карра</div>
-                                        <div class="futurism-2 bottom__content--item">Прателла</div>
-                                        <div class="futurism-3 bottom__content--item">Северини</div>
-                                        <div class="futurism-4 bottom__content--item">Балла</div>
-                                        <div class="futurism-4 bottom__content--item">Балла</div>
+                                        <div class="futurism-1 bottom__content--item">
+                                            <a href="#" class="bottom__link">Карра</a></div>
+                                        <div class="futurism-2 bottom__content--item">
+                                            <a href="#" class="bottom__link">Прателла</a></div>
+                                        <div class="futurism-3 bottom__content--item">
+                                            <a href="#" class="bottom__link">Северини</a></div>
+                                        <div class="futurism-4 bottom__content--item">
+                                            <a href="#" class="bottom__link">Балла</a></div>
+                                        <div class="futurism-4 bottom__content--item">
+                                            <a href="#" class="bottom__link">Балла</a></div>
 
                                     </div>
                                 </div>
@@ -157,8 +196,14 @@
 
                     </div>
                     <div class="bottom__search1920">
-                        <form action="https://jsonplaceholder.typicode.com/posts" class="bottom__form">
-                            <button aria-label="Поиск " type="submit" class="bottom__search"></button>
+                        <form action="https://jsonplaceholder.typicode.com/posts" class="bottom__form ">
+                            <button aria-label="Поиск " type="submit" class="bottom__search">
+                                <svg x="0px" y="0px" viewBox="0 0 20 20" width="20px" height="20px">
+                                    <g stroke-linecap="square" stroke-linejoin="miter" stroke="currentColor">
+                                        <line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="22" y1="22" x2="16.4" y2="16.4"/>
+                                        <circle fill="none" stroke="#ffffff" stroke-miterlimit="10" cx="10" cy="10" r="9"/>
+                                    </g>
+                                </svg></button>
                             <input type="text" placeholder="Поиск по сайту" name="search" class="bottom__input">
 
                         </form>
@@ -184,7 +229,7 @@
 
             </div>
         </section>
-        <section class="about container">
+        <section class="about container" id="about">
             <h3>О нас</h3>
             <div class="about__text">
                 Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный
@@ -193,7 +238,7 @@
                 значит, должны быть разоблачены.
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="gallery__content container">
                 <div class="gallery__left">
                     <h3 class="gallery__heading">Галерея</h3>
@@ -237,178 +282,180 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                                </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
+
+
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                                  
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="swiper-slide--hover">
-                                </div>
-                                <span class="slide-icon">                              
-                            </span>
+
+                                <div class="swiper-slide--hover"> <span class="slide-icon">                                  
+                                </span></div>
+                                <div class="swiper-slide--active"></div>
                             </div>
                         </div>
                     </div>
@@ -432,7 +479,7 @@
                 </script>
             </div>
         </section>
-        <section class="catalog">
+        <section class="catalog" id="catalog">
 
             <div class="container">
                 <div class="catalog__heading">
@@ -489,8 +536,9 @@
                         стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
                     </div>
                 </div>
+                <script src="js/tabs.js"></script>
                 <div class="catalog__content">
-                    <div class="catalog__left">
+                    <div class="catalog__left catalog__left-active" data-target="12">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
                             <h4 class="painter__name">Доменико Гирландайо</h4>
@@ -501,111 +549,385 @@
                             </div>
                         </div>
                     </div>
+                    <div class="catalog__left" data-target="1">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бенедетто ди Биндо</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="2">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name"> Биссоло, Франческо</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="3">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бергоньоне, Амброджо</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="4">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Больтраффио, Джованни</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="5">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бонсиньори, Франческо</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="6">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Боттичини, Рафаэлло</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="7">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Брамантино</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="8">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бреа, Людовико</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="9">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="10">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="11">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="12">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="13">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="14">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="15">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="16">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="17">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="18">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="19">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="20">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="21">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="22">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="23">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__left" data-target="24">
+                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
+                        <div class="painter__bio">
+                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <small class="painter__life">2 июня 1448 — 11 января 1494.
+                            </small>
+                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
+                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="catalog__right">
                         <div class="accordion__container">
                             <div class="accordion">
                                 <ul class="accordion__items">
                                     <li class="accordion__item">
-                                        <div class="accordion__title">
+                                        <a href="javascript:" class=" accordion__title">
+
                                             <h4>C 1400 по 1499 гг.</h4>
                                             <span class="accordion__icon"></span>
-                                        </div>
+
+
+                                        </a>
+
                                         <div class="accordion__content--open">
                                             <div class="content__painters">
-                                                <a href="javascript:" class="painter__link"> Бенедетто ди Биндо</a>
-                                                <a href="javascript:" class="painter__link"> Бергоньоне, Амброджо </a>
-                                                <a href="javascript:" class="painter__link"> Биссоло, Франческо </a>
-                                                <a href="javascript:" class="painter__link"> Больтраффио, Джованни </a>
-                                                <a href="javascript:" class="painter__link">Бонсиньори, Франческо </a>
-                                                <a href="javascript:" class="painter__link">Боттичини, Рафаэлло</a>
-                                                <a href="javascript:" class="painter__link">Брамантино </a>
-                                                <a href="javascript:" class="painter__link">Бреа, Людовико</a>
-                                                <a href="javascript:" class="painter__link"> Бьяджо д’Антонио Туччи</a>
+                                                <button class="painter__button" data-path="1"> Бенедетто ди Биндо</button>
+                                                <button class="painter__button" data-path="2"> Биссоло, Франческо </button>
+                                                <button class="painter__button" data-path="3"> Бергоньоне, Амброджо </button>
+                                                <button class="painter__button" data-path="4"> Больтраффио, Джованни </button>
+                                                <button class="painter__button" data-path="5">Бонсиньори, Франческо </button>
+                                                <button class="painter__button" data-path="6">Боттичини, Рафаэлло</button>
+                                                <button class="painter__button" data-path="7">Брамантино </button>
+                                                <button class="painter__button" data-path="8">Бреа, Людовико</button>
+                                                <button class="painter__button" data-path="9"> Бьяджо д’Антонио Туччи</button>
                                             </div>
-                                            <div class="content__painters">
+                                            <div class="content__painters ">
 
-                                                <a href="javascript:" class="painter__link">Веккьетта</a>
-                                                <a href="javascript:" class="painter__link">Андреа Верроккьо</a>
-                                                <a href="javascript:" class="painter__link painter__link--purple"> Доменико Гирландайо</a>
-                                                <a href="javascript:" class="painter__link">Беноццо Гоццоли</a>
-                                                <a href="javascript:" class="painter__link"> Граначчи, Франческо</a>
-                                                <a href="javascript:" class="painter__link"> Грегорио ди Чекко</a>
-                                                <a href="javascript:" class="painter__link"> Джованни да Удине</a>
-                                                <a href="javascript:" class="painter__link"> Джованни ди Паоло</a>
-                                                <a href="javascript:" class="painter__link"> Джорджоне</a>
+                                                <button class="painter__button" data-path="10">Веккьетта</button>
+                                                <button class="painter__button" data-path="11">Андреа Верроккьо</button>
+                                                <button class="painter__button painter__button-active" data-path="12"> Доменико Гирландайо</button>
+                                                <button class="painter__button" data-path="13">Беноццо Гоццоли</button>
+                                                <button class="painter__button" data-path="14"> Граначчи, Франческо</button>
+                                                <button class="painter__button" data-path="15"> Грегорио ди Чекко</a>
+                                                <button class="painter__button" data-path="16"> Джованни да Удине</button>
+                                                <button class="painter__button" data-path="17"> Джованни ди Паоло</button>
+                                                <button class="painter__button" data-path="18"> Джорджоне</button>
                                             </div>
-                                            <div class="content__painters">
-                                                <a href="javascript:" class="painter__link"> Парентино, Бернандо</a>
-                                                <a href="javascript:" class="painter__link"> Пезеллино</a>
-                                                <a href="javascript:" class="painter__link"> Пьетро Перуджино</a>
-                                                <a href="javascript:" class="painter__link"> Перуцци, Бальдассаре</a>
-                                                <a href="javascript:" class="painter__link"> Пизанелло</a>
-                                                <a href="javascript:" class="painter__link"> Пинтуриккьо</a>
+                                            <div class="content__painters ">
+                                                <button class="painter__button" data-path="19"> Парентино, Бернандо</button>
+                                                <button class="painter__button" data-path="20"> Пезеллино</button>
+                                                <button class="painter__button" data-path="21"> Пьетро Перуджино</button>
+                                                <button class="painter__button" data-path="22"> Перуцци, Бальдассаре</button>
+                                                <button class="painter__button" data-path="23"> Пизанелло</button>
+                                                <button class="painter__button" data-path="24"> Пинтуриккьо</button>
                                             </div>
 
                                         </div>
+                                        <script src="js/tabsaccordion.js"></script>
+
                                     </li>
-                                    <li class="accordion__item">
-                                        <div class="accordion__title">
+                                    <li class="accordion__item ">
+
+                                        <a href="javascript: " class=" accordion__title ">
                                             <h4>C 1500 по 1599 гг.</h4>
-                                            <span class="accordion__icon"></span>
-                                        </div>
-                                        <div class="accordion__content">
+                                            <span class="accordion__icon "></span>
+                                        </a>
+
+                                        <div class="accordion__content ">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
                                                 provident?
                                             </p>
                                         </div>
                                     </li>
-                                    <li class="accordion__item">
-                                        <div class="accordion__title">
+                                    <li class="accordion__item ">
+                                        <a href="javascript: " class=" accordion__title ">
                                             <h4>C 1600 по 1699 гг.</h4>
-                                            <span class="accordion__icon"></span>
-                                        </div>
-                                        <div class="accordion__content">
+                                            <span class="accordion__icon "></span>
+                                        </a>
+                                        <div class="accordion__content ">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
                                                 provident?
                                             </p>
                                         </div>
                                     </li>
-                                    <li class="accordion__item">
-                                        <div class="accordion__title">
+                                    <li class="accordion__item ">
+                                        <a href="javascript: " class=" accordion__title ">
                                             <h4>C 1700 по 1799 гг.</h4>
-                                            <span class="accordion__icon"></span>
-                                        </div>
-                                        <div class="accordion__content">
+                                            <span class="accordion__icon "></span>
+                                        </a>
+                                        <div class="accordion__content ">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
                                                 provident?
                                             </p>
                                         </div>
                                     </li>
-                                    <li class="accordion__item">
-                                        <div class="accordion__title">
+                                    <li class="accordion__item ">
+                                        <a href="javascript: " class=" accordion__title ">
                                             <h4>C 1800 по 1899 гг.</h4>
-                                            <span class="accordion__icon"></span>
-                                        </div>
-                                        <div class="accordion__content">
+                                            <span class="accordion__icon "></span>
+                                        </a>
+                                        <div class="accordion__content ">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
                                                 provident?
                                             </p>
                                         </div>
                                     </li>
-                                    <li class="accordion__item">
-                                        <div class="accordion__title">
+                                    <li class="accordion__item ">
+                                        <a href="javascript: " class=" accordion__title ">
                                             <h4>C 1900 по 1999 гг.</h4>
-                                            <span class="accordion__icon"></span>
-                                        </div>
-                                        <div class="accordion__content">
+                                            <span class="accordion__icon "></span>
+                                        </a>
+                                        <div class="accordion__content ">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
                                                 provident?
                                             </p>
                                         </div>
                                     </li>
-                                    <li class="accordion__item">
-                                        <div class="accordion__title">
+                                    <li class="accordion__item ">
+                                        <a href="javascript: " class=" accordion__title ">
                                             <h4>C 2000 г.</h4>
-                                            <span class="accordion__icon"></span>
-                                        </div>
-                                        <div class="accordion__content">
+                                            <span class="accordion__icon "></span>
+                                        </a>
+                                        <div class="accordion__content ">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt est voluptates earum sint laborum eligendi blanditiis commodi. Consequuntur culpa ad voluptates aut vitae cumque quod quam quidem? Cupiditate,
                                                 provident?
                                             </p>
@@ -620,64 +942,64 @@
 
 
         </section>
-        <section class="events">
-            <div class="container">
-                <h3 class="events__title">
+        <section class="events " id="events ">
+            <div class="container ">
+                <h3 class="events__title ">
                     События
                 </h3>
-                <div class="events__cards">
+                <div class="events__cards ">
 
-                    <div class="event__card">
-                        <img src="img/events/card1.jpg" alt="eventscard" class="events__img">
-                        <div class="card__content">
-                            <p class="card__date">
+                    <div class="event__card ">
+                        <img src="img/events/card1.jpg " alt="eventscard " class="events__img ">
+                        <div class="card__content ">
+                            <p class="card__date ">
                                 Музей им. Щусева<br> с 20 марта по 30 апреля
                             </p>
-                            <h4 class="card__title">
+                            <h4 class="card__title ">
                                 Книжная гравюра в живом восприятии
                             </h4>
-                            <p class="card__text card__text--short">
+                            <p class="card__text card__text--short ">
                                 Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юнный Микеланджело.
                             </p>
-                            <a href="javascript:" class="card__link">Подробнее</a>
+                            <a href="javascript: " class="card__link ">Подробнее</a>
                         </div>
                     </div>
-                    <div class="event__card">
-                        <img src="img/events/card2.jpg" alt="eventscard" class="events__img">
-                        <div class="card__content">
+                    <div class="event__card ">
+                        <img src="img/events/card2.jpg " alt="eventscard " class="events__img ">
+                        <div class="card__content ">
 
-                            <p class="card__date">
+                            <p class="card__date ">
                                 ММОМА<br> 24 марта 19:00
                             </p>
-                            <h4 class="card__title">
+                            <h4 class="card__title ">
                                 «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
                             </h4>
-                            <p class="card__text">
+                            <p class="card__text ">
                                 Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования..
                             </p>
-                            <a href="javascript:" class="card__link">Подробнее</a>
+                            <a href="javascript: " class="card__link ">Подробнее</a>
                         </div>
                     </div>
-                    <div class="event__card">
-                        <img src="img/events/card3.jpg" alt="eventscard" class="events__img">
-                        <div class="card__content">
-                            <p class="card__date">
+                    <div class="event__card ">
+                        <img src="img/events/card3.jpg " alt="eventscard " class="events__img ">
+                        <div class="card__content ">
+                            <p class="card__date ">
                                 Еврейский музей <br> с 31 марта по 21 апреля
                             </p>
-                            <h4 class="card__title">
+                            <h4 class="card__title ">
                                 Выставка «Формация 2020»
                             </h4>
-                            <p class="card__text">
+                            <p class="card__text ">
                                 Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической
                                 и кадровой базы.
                             </p>
-                            <a href="javascript:" class="card__link">Подробнее</a>
+                            <a href="javascript: " class="card__link ">Подробнее</a>
                         </div>
                     </div>
 
                 </div>
-                <div class="events__button">
-                    <button class="event__button">
+                <div class="events__button ">
+                    <button class="event__button ">
                     Все события
                     </button>
                 </div>
@@ -689,6 +1011,8 @@
         </div>
     </div>
 </body>
+
+</html>
 
 </html>
 
