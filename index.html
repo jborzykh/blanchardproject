@@ -32,8 +32,21 @@
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
     <script src="js/accordioncatalog.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#menu").on("click", "a", function(event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({
+                    scrollTop: top
+                }, 1500);
+            });
+        });
+    </script>
 
 
 
@@ -213,7 +226,7 @@
             </div>
 
         </header>
-        <section class="banner">
+        <section class="banner" id="banner">
             <div class="banner__container">
 
                 <div class="banner__content container">
@@ -229,6 +242,7 @@
 
             </div>
         </section>
+
         <section class="about container" id="about">
             <h3>О нас</h3>
             <div class="about__text">
@@ -282,10 +296,11 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-
+                                <button class="swiper__btn">
                                 <div class="swiper-slide--hover"> <span class="slide-icon">                                  
                                 </span></div>
                                 <div class="swiper-slide--active"></div>
+                                </button>
 
 
                             </div>
@@ -563,7 +578,7 @@
                     <div class="catalog__left" data-target="2">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name"> Биссоло, Франческо</h4>
+                            <h4 class="painter__name"> Бергоньоне, Амброджо</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -574,7 +589,7 @@
                     <div class="catalog__left" data-target="3">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бергоньоне, Амброджо</h4>
+                            <h4 class="painter__name">Биссоло, Франческо</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -651,7 +666,7 @@
                     <div class="catalog__left" data-target="10">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Веккьетта</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -662,7 +677,7 @@
                     <div class="catalog__left" data-target="11">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Андреа Верроккьо</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -670,21 +685,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="catalog__left" data-target="12">
-                        <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
-                        <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
-                            <small class="painter__life">2 июня 1448 — 11 января 1494.
-                            </small>
-                            <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
-                                навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="catalog__left" data-target="13">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Беноццо Гоццоли</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -695,7 +700,7 @@
                     <div class="catalog__left" data-target="14">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Граначчи, Франческои</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -706,7 +711,7 @@
                     <div class="catalog__left" data-target="15">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Грегорио ди Чекко</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -717,7 +722,7 @@
                     <div class="catalog__left" data-target="16">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Джованни да Удине</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -728,7 +733,7 @@
                     <div class="catalog__left" data-target="17">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Джованни ди Паоло</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -739,7 +744,7 @@
                     <div class="catalog__left" data-target="18">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Джорджоне</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -750,7 +755,7 @@
                     <div class="catalog__left" data-target="19">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Парентино, Бернандо</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -761,7 +766,7 @@
                     <div class="catalog__left" data-target="20">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Пезеллино</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -772,7 +777,7 @@
                     <div class="catalog__left" data-target="21">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Пьетро Перуджино</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -783,7 +788,7 @@
                     <div class="catalog__left" data-target="22">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Перуцци, Бальдассаре</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -794,7 +799,7 @@
                     <div class="catalog__left" data-target="23">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Пизанелло</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -805,7 +810,7 @@
                     <div class="catalog__left" data-target="24">
                         <img class="catalog__painter" src="img/catalog/painter.jpg" alt="painter">
                         <div class="painter__bio">
-                            <h4 class="painter__name">Бьяджо д’Антонио Туччи</h4>
+                            <h4 class="painter__name">Пинтуриккьо</h4>
                             <small class="painter__life">2 июня 1448 — 11 января 1494.
                             </small>
                             <div class="painter__bio"> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными
@@ -831,8 +836,8 @@
                                         <div class="accordion__content--open">
                                             <div class="content__painters">
                                                 <button class="painter__button" data-path="1"> Бенедетто ди Биндо</button>
-                                                <button class="painter__button" data-path="2"> Биссоло, Франческо </button>
-                                                <button class="painter__button" data-path="3"> Бергоньоне, Амброджо </button>
+                                                <button class="painter__button" data-path="2"> Бергоньоне, Амброджо </button>
+                                                <button class="painter__button" data-path="3"> Биссоло, Франческо </button>
                                                 <button class="painter__button" data-path="4"> Больтраффио, Джованни </button>
                                                 <button class="painter__button" data-path="5">Бонсиньори, Франческо </button>
                                                 <button class="painter__button" data-path="6">Боттичини, Рафаэлло</button>
@@ -840,7 +845,7 @@
                                                 <button class="painter__button" data-path="8">Бреа, Людовико</button>
                                                 <button class="painter__button" data-path="9"> Бьяджо д’Антонио Туччи</button>
                                             </div>
-                                            <div class="content__painters ">
+                                            <div class="content__painters">
 
                                                 <button class="painter__button" data-path="10">Веккьетта</button>
                                                 <button class="painter__button" data-path="11">Андреа Верроккьо</button>
@@ -852,7 +857,7 @@
                                                 <button class="painter__button" data-path="17"> Джованни ди Паоло</button>
                                                 <button class="painter__button" data-path="18"> Джорджоне</button>
                                             </div>
-                                            <div class="content__painters ">
+                                            <div class="content__painters">
                                                 <button class="painter__button" data-path="19"> Парентино, Бернандо</button>
                                                 <button class="painter__button" data-path="20"> Пезеллино</button>
                                                 <button class="painter__button" data-path="21"> Пьетро Перуджино</button>
@@ -942,7 +947,7 @@
 
 
         </section>
-        <section class="events " id="events ">
+        <section class="events" id="events">
             <div class="container ">
                 <h3 class="events__title ">
                     События
@@ -1007,13 +1012,10 @@
 
         </section>
 
+
         <div class="pixel ">
         </div>
     </div>
 </body>
-
-</html>
-
-</html>
 
 </html>

@@ -188,7 +188,9 @@
    margin-top: 0;
    width: 30px;
    height: 30px;
-   background: url(../img/gallery/krug.svg);
+   background-color: #666666;
+   border-radius: 100px;
+   cursor: pointer;
   }
   
   .swiper-button-prev {
@@ -225,6 +227,11 @@
    height: 350px;
    background-repeat: no-repeat;
    cursor: pointer;
+  }
+  
+  .swiper__btn {
+   width: 100%;
+   height: 100%;
   }
   
   .swiper-slide:nth-of-type(1) {

@@ -1,242 +1,332 @@
-      .catalog {
-       min-height: 1390px;
-       margin-bottom: 80px;
-      }
-      
-      .catalog__heading {
-       display: -webkit-box;
-       display: -ms-flexbox;
-       display: flex;
-       -webkit-box-pack: justify;
-       -ms-flex-pack: justify;
-       margin-bottom: 18px;
-      }
-      
-      .catalog__title {
-       margin-right: 41px;
-      }
-      
-      .catalog__flags {
-       display: -webkit-box;
-       display: -ms-flexbox;
-       display: flex;
-      }
-      
-      .flag__btn {
-       margin-top: 12px;
-       width: 46px;
-       height: 46px;
-       background: #fff;
-       cursor: pointer;
-      }
-      
-      .flag:not(:last-child) {
-       margin-right: 50px;
-      }
-      
-      .france {
-       background-image: url('../img/catalog/flag1.png');
-      }
-      
-      .germany {
-       background-image: url('../img/catalog/flag2.png');
-      }
-      
-      .italy {
-       background-image: url('../img/catalog/flag3.png');
-      }
-      
-      .russia {
-       background-image: url('../img/catalog/flag4.png');
-      }
-      
-      .belgium {
-       background-image: url('../img/catalog/flag5.png');
-      }
-      
-      .tab-content {
-       display: none;
-      }
-      
-      .tab-content-active {
-       display: -webkit-box;
-       display: -ms-flexbox;
-       display: flex;
-       flex-direction: column;
-       -webkit-animation: content 0.5s ease-in;
-       animation: content 0.5s ease-in;
-       -webkit-animation-fill-mode: forwards;
-       animation-fill-mode: forwards;
-      }
-      
-      .flag__btn-active {
-       margin-top: 2px;
-       margin-left: -10px;
-       margin-right: -10px;
-       margin-bottom: -10px;
-       background-repeat: no-repeat;
-       background-position: center;
-       width: 66px;
-       height: 66px;
-       border: 2px solid #9D5CD0;
-       border-radius: 50px;
-       -webkit-animation: content 0.5s ease-in;
-       animation: content 0.5s ease-in;
-       -webkit-animation-fill-mode: forwards;
-       animation-fill-mode: forwards;
-      }
-      
-      @keyframes content {
-       0% {
-        opacity: 0;
-       }
-       100% {
-        opacity: 1;
-       }
-      }
-      
-      @-webkit-keyframes content {
-       0% {
-        opacity: 0;
-       }
-       100% {
-        opacity: 1;
-       }
-      }
-      
-      .belgian {
-       color: yellow;
-      }
-      
-      .italian {
-       color: green;
-      }
-      
-      .german {
-       color: brown;
-      }
-      
-      .french {
-       color: red;
-      }
-      
-      .catalog__text {
-       margin-bottom: 48px;
-       width: 1080px;
-       height: 117px;
-      }
-      
-      .catalog__content {
-       display: -webkit-box;
-       display: -ms-flexbox;
-       display: flex;
-      }
-      
-      .catalog__left {
-       display: none;
-      }
-      
-      .catalog__left-active {
-       display: flex;
-       -webkit-box-orient: vertical;
-       -webkit-box-direction: normal;
-       -ms-flex-direction: column;
-       flex-direction: column;
-       width: 750px;
-       margin-right: 50px;
-       -webkit-animation: content 0.5s ease-in;
-       animation: content 0.5s ease-in;
-       -webkit-animation-fill-mode: forwards;
-       animation-fill-mode: forwards;
-      }
-      
-      .catalog__painter {
-       margin-bottom: 20px;
-      }
-      
-      .painter__bio {
-       display: -webkit-box;
-       display: -ms-flexbox;
-       display: flex;
-       -webkit-box-orient: vertical;
-       -webkit-box-direction: normal;
-       -ms-flex-direction: column;
-       flex-direction: column;
-      }
-      
-      .painter__life {
-       font-size: 75%;
-      }
-      
-      .catalog__right {
-       width: 800px;
-      }
-      
-      .accordion__title:first-child {
-       height: 114px;
-      }
-      
-      .accordion__title {
-       display: flex;
-       justify-content: space-between;
-       height: 115px;
-       width: 800px;
-       align-items: center;
-       position: relative;
-       cursor: pointer;
-       border-top: 1px solid #CACACA;
-      }
-      
-      .accordion__item:last-child {
-       border-bottom: 1px solid #CACACA;
-      }
-      
-      .accordion__title h4 {
-       padding-top: 36px;
-       height: 100%;
-       color: #333333;
-      }
-      
-      .accordion__icon {
-       width: 50px;
-       height: 50px;
-       background-image: url("../img/catalog/accordionarrow.png");
-       background-repeat: no-repeat;
-       transform: rotate(0deg);
-       transition: all .4s ease-in-out;
-      }
-      
-      .accordion__content {
-       max-height: 0;
-       overflow: hidden;
-       transition: all .6s ease-in-out;
-      }
-      
-      .active .accordion__content, .accordion__content--open {
-       padding-top: 26px;
-       padding-bottom: 40px;
-       max-height: 343px;
-       display: -webkit-box;
-       display: -ms-flexbox;
-       display: flex;
-       border-top: 1px solid #CACACA;
-      }
-      
-      .content__painters {
-       display: -webkit-box;
-       display: -ms-flexbox;
-       display: flex;
-       -webkit-box-orient: vertical;
-       -webkit-box-direction: normal;
-       -ms-flex-direction: column;
-       flex-direction: column;
-       width: 208px;
-      }
-      
-      .content__painters:not(:last-child) {
-       margin-right: 50px;
-      }
-      
-      .active .accordion__icon {
-       transform: rotate(180deg);
-      }
+ .catalog {
+  min-height: 1390px;
+  margin-bottom: 80px;
+ }
+ 
+ .catalog__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  margin-bottom: 18px;
+ }
+ 
+ .catalog__title {
+  margin-right: 41px;
+ }
+ 
+ .catalog__flags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+ }
+ 
+ .flag__btn {
+  margin-top: 12px;
+  width: 46px;
+  height: 46px;
+  background: #fff;
+  cursor: pointer;
+ }
+ 
+ .flag:not(:last-child) {
+  margin-right: 50px;
+ }
+ 
+ .france {
+  background-image: url('../img/catalog/flag1.png');
+ }
+ 
+ .germany {
+  background-image: url('../img/catalog/flag2.png');
+ }
+ 
+ .italy {
+  background-image: url('../img/catalog/flag3.png');
+ }
+ 
+ .russia {
+  background-image: url('../img/catalog/flag4.png');
+ }
+ 
+ .belgium {
+  background-image: url('../img/catalog/flag5.png');
+ }
+ 
+ .tab-content {
+  display: none;
+ }
+ 
+ .tab-content-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-animation: content 0.5s ease-in;
+  animation: content 0.5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+ }
+ 
+ .flag__btn-active {
+  margin-top: 2px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 66px;
+  height: 66px;
+  border: 2px solid #9D5CD0;
+  border-radius: 50px;
+  -webkit-animation: content 0.5s ease-in;
+  animation: content 0.5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+ }
+ 
+ @keyframes content {
+  0% {
+   opacity: 0;
+  }
+  100% {
+   opacity: 1;
+  }
+ }
+ 
+ @-webkit-keyframes content {
+  0% {
+   opacity: 0;
+  }
+  100% {
+   opacity: 1;
+  }
+ }
+ 
+ .belgian {
+  color: yellow;
+ }
+ 
+ .italian {
+  color: green;
+ }
+ 
+ .german {
+  color: brown;
+ }
+ 
+ .french {
+  color: red;
+ }
+ 
+ .catalog__text {
+  margin-bottom: 48px;
+  width: 1080px;
+  height: 117px;
+ }
+ 
+ .catalog__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+ }
+ 
+ .catalog__left {
+  display: none;
+ }
+ 
+ .catalog__left-active {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 750px;
+  margin-right: 40px;
+  -webkit-animation: content 0.5s ease-in;
+  animation: content 0.5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+ }
+ 
+ .painter__button {
+  width: fit-content;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: left;
+  cursor: pointer;
+ }
+ 
+ .catalog__painter {
+  margin-bottom: 30px;
+ }
+ 
+ .painter__bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+ }
+ 
+ .painter__life {
+  font-size: 75%;
+ }
+ 
+ .catalog__right {
+  width: 800px;
+  margin-left: 10px;
+ }
+ 
+ .accordion__title:first-child {
+  height: 114px;
+ }
+ 
+ .accordion__title {
+  display: flex;
+  justify-content: space-between;
+  height: 115px;
+  width: 800px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border-top: 1px solid #CACACA;
+  margin-right: 10px;
+  outline: none;
+ }
+ 
+ .accordion__item:last-child {
+  border-bottom: 1px solid #CACACA;
+ }
+ 
+ .accordion__title h4 {
+  padding-top: 36px;
+  height: 100%;
+  color: #333333;
+ }
+ 
+ .accordion__icon {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/catalog/accordionarrow.png");
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+  transition: all .4s ease-in-out;
+ }
+ 
+ .accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .6s ease-in-out;
+ }
+ 
+ .active .accordion__content, .accordion__content--open {
+  padding-top: 26px;
+  padding-bottom: 40px;
+  max-height: 343px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #CACACA;
+ }
+ 
+ .content__painters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 208px;
+ }
+ 
+ .content__painters:not(:last-child) {
+  margin-right: 50px;
+ }
+ 
+ .active .accordion__icon {
+  transform: rotate(180deg);
+ }
+ 
+ .flag__btn:hover {
+  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+  background-color: inherit;
+  border-radius: 29px;
+  transition: 0.2s linear;
+  margin-bottom: -10px;
+ }
+ 
+ .flag__btn:active {
+  border: 2px solid #9D5CD0;
+  border-radius: 23px;
+  filter: none;
+  margin-bottom: -10px;
+ }
+ 
+ .flag__btn-active:hover {
+  filter: none;
+  border-radius: 50px;
+ }
+ 
+ .accordion__item:hover h4 {
+  color: #9D5CD0;
+  outline: none;
+ }
+ 
+ .accordion__item:hover span {
+  background-image: url("../img/catalog/accordionarrowpurple.png");
+  outline: none;
+ }
+ 
+ .accordion__item:active h4 {
+  color: #7943A4;
+  outline: none;
+ }
+ 
+ .accordion__item:active span {
+  background-image: url("../img/catalog/accordionarrowactive.png");
+  outline: none;
+ }
+ 
+ .accordion__title:before {
+  content: "";
+  position: absolute;
+  width: 814px;
+  height: 129px;
+  opacity: 0;
+  border: 2px solid #7943A4;
+  transition: opacity 0.1s ease-in-out;
+ }
+ 
+ .accordion__title:focus::before {
+  outline: none;
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+  margin-left: -7px;
+  margin-right: -7px;
+ }
+ 
+ .painter__button:focus {
+  border: 2px solid #7943a4;
+  margin-left: -6px;
+  padding-left: 6px;
+  padding-right: 6px;
+  outline: none;
+ }
+ 
+ .painter__button:hover {
+  border: none;
+  border-bottom: 1px solid #9d5cd0;
+  color: #9d5cd0;
+  font-family: "openSans-SemiBold";
+  width: fit-content;
+ }
+ 
+ .painter__button:active {
+  border: none;
+  color: #7943A4;
+ }
